@@ -61,7 +61,7 @@ section#weatherData {
     background-image: url(/images/sky.jpg);
     background-size: cover;
     color: white;
-    padding: 0% 20% 57% 2%;
+    padding: 0% 20% 60% 2%;
 }
 img#wireframe {
     clear: both;
