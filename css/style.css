@@ -7,11 +7,122 @@ Used to make sure that anything outside of the regular box model gets the same s
 *:before, *:after{
     box-sizing: border-box;
 }*/
+html {
+    background-color: #555;
+    color: lightgray;
+}
+#logo {
+    float: left;
+    width: 10%;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-right: 3px;
+}
+h2#banner {
+    margin: 0px;
+    padding: 3px 0px 3px 0px;
+    background-color: black;
+    border: 3px solid black;
+}
+h2#city {
+    margin: 0px;
+    padding: 10px 0px 10px 0px;
+}
+nav ul li{
+    display: inline;
+}
+nav ul {
+    list-style-type: none;
+    margin-bottom: 7px;
+    margin-top: 3px;
+    padding: 0px 0px 0 2%;
+    font-weight: bold;
+    font-size: 15px;
+}
+nav#searchBar {
+    margin: 0px 0px 0px 43%;
+    padding: 0px;
+}
 ul#report {
     float: left;
     list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 img#sunIcon {
     float: right;
     list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: 20px;
+}
+section#weatherData {
+    background-image: url(/images/sky.jpg);
+    background-size: cover;
+    color: white;
+    padding: 0% 20% 57% 2%;
+}
+img#wireframe {
+    clear: both;
+    padding-top: 0px;
+}
+a {
+    color: lightgray;
+    text-decoration: none;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 2px solid white;
+    height: 100px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+}
+thead tr td {
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 1px solid white;
+}
+td#lastTop {
+    border-right: 0px;
+}
+td {
+    width: 100%;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+td#last {
+    border-right: 0px;
+}
+
+img#news1 {
+    width: 49%;
+    padding: 0px;
+    margin: 0px;
+}
+img#news2 {
+    width: 49%;
+    padding: 0px;
+    margin: 0px;
+}
+section#news table.headlines tr td {
+    padding: 20px;
+    margin: 5px;
+    border: 0px;
+    height: 10px;
+    display: inline;
+}
+section#news table.headlines {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+footer {
+    clear: both;
+    text-align: center;
 }

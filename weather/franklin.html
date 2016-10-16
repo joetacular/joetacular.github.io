@@ -7,32 +7,74 @@
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
 <header>
-    <h2>Weather Site Banner</h2>
+    <img src='/images/logo.png' alt='site logo' id='logo'>
+    <h2 id='banner'>WeatherNow.com</h2>
 </header>
 <nav>
     <ul>
-        <li><a href='franklin.html'>Franklin, ID</a></li>
-        <li><a href='greenville.html'>Greenville, SC</a></li>
+        <li><a href='franklin.html'>Franklin, ID | </a></li>
+        <li><a href='greenville.html'>Greenville, SC | </a></li>
         <li><a href='springfield.html'>Springfield, IL</a></li>
     </ul>
 </nav>
+<nav id='searchBar'>
+    <input type='text' name='searchBar' placeholder='Search...'>
+</nav>
 <main>
-    <h2>Weather Report for Franklin, ID</h2>
-    <img src='/images/sun.png' alt='sunny icon' id='sunIcon' width='30%'>
-        <ul id='report' width='70%'>
-            <li>High: 90&deg;</li>
-            <li>Low: 66&deg;</li>
-            <li>Precip: 0</li>
-            <li>Wind: 1 - 5</li>
-            <li>Direction: Southwest</li>
-            <li>Summary: Sunny</li>
-            <li>Longitude: -111.803757&deg;</li>
-            <li>Latitude: 42.011902&deg;</li>
-            <li>ZIP: 83237</li>
-        </ul>
-    <img src='/images/revisediphone.jpg' alt='revised iphone wireframe' width='300px'>
+    <section id='weatherData'>
+        <h2 id='city'>Franklin, ID</h2>
+        <img src='/images/sun.png' alt='sunny icon' id='sunIcon' width='32%'>
+            <ul id='report' width='70%'>
+                <li><strong>High: 90&deg;</strong></li>
+                <li><strong>Low: 66&deg;</strong></li>
+                <li>Precip: 0</li>
+                <li>Wind: 1 - 5</li>
+                <li>Direction: Southwest</li>
+                <li>Summary: Sunny</li>
+                <li>Longitude: -111.803757&deg;</li>
+                <li>Latitude: 42.011902&deg;</li>
+                <li>ZIP: 83237</li>
+            </ul>
+    </section>
+    <section id='hourly'>
+        <table>
+            <thead>
+                <tr>
+                    <td>1P.M.</td>
+                    <td>2P.M.</td>
+                    <td>3P.M.</td>
+                    <td id='lastTop'>4P.M.</td>
+                </tr>
+            </thead>
+            <tr>
+                <td class='hourlyData'>
+                    <img src='/images/sun.png' alt='sunny icon' width='65%'><br>86&deg;
+                </td>
+                <td class='hourlyData'>
+                    <img src='/images/sun.png' alt='sunny icon' width='65%'><br>88&deg;
+                </td>
+                <td class='hourlyData'>
+                    <img src='/images/sun.png' alt='sunny icon' width='65%'><br>90&deg;
+                </td>
+                <td class='hourlyData' id='last'>
+                    <img src='/images/sun.png' alt='sunny icon' width='65%'><br>90&deg;
+                </td>
+            </tr>
+        </table>
+    </section>
+    <section id='news'>
+        <a href='#' alt='article'><img src='/images/news1.jpg' alt='news article' id='news1'></a>
+        <a href='#' alt='article'><img src='/images/news2.jpg' alt='news article' id='news2'></a>
+        <table class='headlines'>
+            <tr>
+                <td>Terrible Storms!</td>
+                <td>Flash Floods!</td>
+            </tr>
+        </table>
+    </section>
+    <img src='/images/revisediphone.jpg' alt='revised iphone wireframe' width='305px' id='wireframe'>
 </main>
 <footer>
-    <h2>Footer goes here.</h2>
+    <h4>WeatherNow.com | By Joseph Canto | &copy;2016</h4>
 </footer>
 </html>
