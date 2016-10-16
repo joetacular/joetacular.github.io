@@ -1,0 +1,10 @@
+/*Change the CSS box model
+html *{
+    box-sizing: border-box;
+    background-color: silver;
+}
+Used to make sure that anything outside of the regular box model gets the same sizing effects
+*:before, *:after{
+    box-sizing: border-box;
+}*/
+

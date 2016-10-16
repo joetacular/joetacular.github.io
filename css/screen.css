@@ -1,0 +1,22 @@
+/*Change the CSS box model*/
+html *{
+    box-sizing: border-box;
+    background-color: silver;
+}
+/*Used to make sure that anything outside of the regular box model gets the same sizing effects*/
+*:before, *:after{
+    box-sizing: border-box;
+}
+
+p, h1 {
+    background-color: darkgreen;
+    color: white;
+    padding: 12px;
+    border: 5px solid #FFFFFF;
+    margin: 100px;
+    width: 400px;
+}
+
+/*body{
+    font-size: 24px;
+}*/
