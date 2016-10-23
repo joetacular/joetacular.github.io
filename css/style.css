@@ -55,10 +55,10 @@ a#alerts {
 #top-nav ul li a {
     font-size: 96%;
 }
-nav li a:hover {
+a:hover {
     color: black;
 }
-nav li a:visited {
+a:visited {
     color: gold;
 }
 #top-nav ul {
@@ -284,13 +284,14 @@ section#hourly {
     #relatedNews {
         float: right;
         width: 30%;
-        height: 500px;
         text-align: center;
         border: 1px solid white;
+        height: 450px;
     }
     #relatedNews p {
         text-align: left;
-        padding: 2px;
+        padding: 2px 4px;
+        margin: 18px 0px;
     }
     #wolf {
         width: 100%;
@@ -376,6 +377,6 @@ section#hourly {
     #relatedNews {
         float: right;
         width: 30%;
-        height: 500px;
+        height: 455px;
     }
 }
