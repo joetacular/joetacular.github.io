@@ -13,7 +13,6 @@ html {
     color: lightgray;
 }
 #content {
-    width = 80%;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -73,7 +72,7 @@ nav ul {
     float: right;
     position: relative;
     left: 80px;
-    display: hidden;
+    display: none;
 }
 .wireframes {
     clear: both;
@@ -174,7 +173,7 @@ section#hourly {
         top: 5px;
     }
     #sunIcon {
-        display: auto;
+        display: inline-block;
     }
     #mobilesunIcon {
         display: none;
@@ -213,7 +212,7 @@ section#hourly {
         top: 12px;
     }
     #sunIcon {
-        display: block;
+        display: inline-block;
     }
     #mobilesunIcon {
         display: none;
