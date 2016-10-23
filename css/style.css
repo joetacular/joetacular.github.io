@@ -74,11 +74,6 @@ nav ul {
     left: 80px;
     display: none;
 }
-.wireframes {
-    clear: both;
-    max-width: 100%;
-    margin: 0px auto;
-}
 a {
     color: lightgray;
     text-decoration: none;
@@ -128,15 +123,45 @@ section#hourly {
     width: 100%;
 }
 #news {
+    width: 70%;
+    height: 450px;
+    float: left;
     display: none;
 }
 #news-top-row {
-    margin: 0 auto;
-    display: inline;
+    width: 100%;
+    height: 200px;
 }
 #news-bottom-row {
-    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    margin: 50px 0px;
+}
+#news img {
+    width: 31%;
+    height: 75%;
+    margin: 0px 5px 10px 5px;
+}
+#news-top-row p {
     display: inline;
+    margin: 0px 8.6%;
+}
+#news-bottom-row p {
+    display: inline;
+    margin: 0px 8.4%;
+}
+#sketches h3 {
+    margin: 0px 4.6%;
+}
+#sketches {
+    margin: 20px 0px;
+    float: left;
+    display: none;
+    text-align: center;
+}
+.wireframes {
+    max-width: 100%;
+    margin: 1%;
 }
 
 /*===================================================================================================================================================================
@@ -148,7 +173,7 @@ section#hourly {
         display: inline-block;
     }
     #news {
-        display: block;
+        display:inherit;
     }
     #mobileNews {
         display: none;
@@ -178,6 +203,15 @@ section#hourly {
     #mobilesunIcon {
         display: none;
     }
+    #mobileSketches {
+        display: none;
+    }
+    #sketches {
+        display: inline;
+    }
+    #sketches h3 {
+        display: inline;
+    }
 }
 
 /*===================================================================================================================================================================
@@ -189,7 +223,7 @@ section#hourly {
         display: inline-block;
     }
     #news {
-        display: block;
+        display: inherit;
     }
     #mobileNews {
         display: none;
@@ -216,5 +250,14 @@ section#hourly {
     }
     #mobilesunIcon {
         display: none;
+    }
+    #mobileSketches {
+        display: none;
+    }
+    #sketches {
+        display: inline;
+    }
+    #sketches h3 {
+        display: inline;
     }
 }
