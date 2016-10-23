@@ -1,30 +1,38 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Franklin, ID | Weather Report</title>
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
 <div id='content'>
-<header>
-    <img src='/images/logo.png' alt='site logo' id='logo'>
-    <h2 id='banner'>WeatherNow.com</h2>
-</header>
-<nav>
-    <ul>
-        <li><a href='franklin.html'>Franklin, ID | </a></li>
-        <li><a href='greenville.html'>Greenville, SC | </a></li>
-        <li><a href='springfield.html'>Springfield, IL</a></li>
-    </ul>
-</nav>
-<nav id='searchBar'>
-    <input type='text' name='searchBar' placeholder='Search...'>
-</nav>
-<main>
-    <section id='weatherData'>
-        <h2 id='city'>Franklin, ID</h2>
-        <img src='/images/sun.png' alt='sunny icon' id='sunIcon' width='75'>
+    <header>
+        <img src='/images/logo.png' alt='site logo' id='logo'>
+        <h2 id='banner'>WeatherNow.com</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href='franklin.html'>Franklin, ID | </a></li>
+            <li><a href='greenville.html'>Greenville, SC | </a></li>
+            <li><a href='springfield.html'>Springfield, IL</a></li>
+        </ul>
+    </nav>
+    <p>
+        <a href='#' id='alerts'>Local Weather Alerts</a>
+        <input type='text' id='searchBar' placeholder='Search...'>
+    </p>
+    <main>
+        <section id='mobileWeatherData'>
+            <h1 id='city'>Franklin, ID</h1>
+            <h2>Hi: 90&deg;</h2>
+            <h2>Lo: 66&deg;</h2>
+            <img src='/images/sun.png' alt='sunny icon' id='sunIcon'>
+        </section>
+        <section id='weatherData'>
+            <h2 id='city'>Franklin, ID</h2>
+            <img src='/images/sun.png' alt='sunny icon' id='sunIcon'>
             <ul id='report'>
                 <li><strong>High: 90&deg;</strong></li>
                 <li><strong>Low: 66&deg;</strong></li>
@@ -36,45 +44,104 @@
                 <li>Latitude: 42.011902&deg;</li>
                 <li>ZIP: 83237</li>
             </ul>
-    </section>
-    <section id='hourly'>
-        <h2>Hourly</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>1P.M.</td>
-                    <td>2P.M.</td>
-                    <td>3P.M.</td>
-                    <td id='lastTop'>4P.M.</td>
-                </tr>
-            </thead>
-            <tr>
-                <td class='hourlyData'>
-                    <img src='/images/sun.png' alt='sunny icon' width='45'><br>86&deg;
-                </td>
-                <td class='hourlyData'>
-                    <img src='/images/sun.png' alt='sunny icon' width='45'><br>88&deg;
-                </td>
-                <td class='hourlyData'>
-                    <img src='/images/sun.png' alt='sunny icon' width='45'><br>90&deg;
-                </td>
-                <td class='hourlyData' id='last'>
-                    <img src='/images/sun.png' alt='sunny icon' width='45'><br>90&deg;
-                </td>
-            </tr>
-        </table>
-    </section>
-    <section id='news'>
-        <h2>News</h2>
-        <a href=''><img src='/images/news1.jpg' alt='news article' id='news1'></a>
-        <a href=''><img src='/images/news2.jpg' alt='news article' id='news2'></a>
-        <p>Terrible Storms!</p>
-        <p>Flash Floods!</p>
-    </section>
-    <img src='/images/revisediphone.jpg' alt='revised iphone wireframe' width='305' id='wireframe'>
-</main>
-<footer>
-    <h4>WeatherNow.com | By Joseph Canto | &copy;2016</h4>
-</footer>
+        </section>
+        <section id='hourly'>
+            <h2>Hourly</h2>
+            <table id='hourlytemps'>
+                <thead>
+                    <tr>
+                        <td>12A.M.</td>
+                        <td>1A.M.</td>
+                        <td>2A.M.</td>
+                        <td>3A.M.</td>
+                        <td>4A.M.</td>
+                        <td>5A.M.</td>
+                        <td>6A.M.</td>
+                        <td>7A.M.</td>
+                        <td>8A.M.</td>
+                        <td>9A.M.</td>
+                        <td>10A.M.</td>
+                        <td>11A.M.</td>
+                        <td>12P.M.</td>
+                        <td>1P.M.</td>
+                        <td>2P.M.</td>
+                        <td>3P.M.</td>
+                        <td>4P.M.</td>
+                        <td>5P.M.</td>
+                        <td>6P.M.</td>
+                        <td>7P.M.</td>
+                        <td>8P.M.</td>
+                        <td>9P.M.</td>
+                        <td>10P.M.</td>
+                        <td>11P.M.</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>67&deg;</td>
+                        <td>67&deg;</td>
+                        <td>69&deg;</td>
+                        <td>69&deg;</td>
+                        <td>69&deg;</td>
+                        <td>70&deg;</td>
+                        <td>69&deg;</td>
+                        <td>72&deg;</td>
+                        <td>74&deg;</td>
+                        <td>77&deg;</td>
+                        <td>79&deg;</td>
+                        <td>81&deg;</td>
+                        <td>84&deg;</td>
+                        <td>86&deg;</td>
+                        <td>88&deg;</td>
+                        <td>90&deg;</td>
+                        <td>90&deg;</td>
+                        <td>85&deg;</td>
+                        <td>83&deg;</td>
+                        <td>79&deg;</td>
+                        <td>74&deg;</td>
+                        <td>70&deg;</td>
+                        <td>68&deg;</td>
+                        <td>66&deg;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id='mobileNews'>
+            <h2>News</h2>
+            <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+            <p>Terrible Storms!</p>
+            <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+            <p>Flash Floods!</p>
+        </section>
+        <section id='news'>
+            <div id='news-top-row'>
+                <h2>News</h2>
+                <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                <p>Terrible Storms!</p>
+                <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                <p>Flash Floods!</p>
+                <a href=''><img src='/images/news1.jpg' alt='news article'></a>
+                <p>More Storms!</p>
+            </div>
+            <div id='news-bottom-row'>
+                <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                <p>Even More Storms!</p>
+                <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                <p>And More Storms!</p>
+                <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                <p>Still More Storms!</p>
+            </div>
+        </section>
+        <h3>iPhone Wireframe Sketch:</h3>
+        <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
+        <h3>iPad Wireframe Sketch:</h3>
+        <img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
+        <h3>Browser Wireframe Sketch:</h3>
+        <img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
+    </main>
+    <footer>
+        <h4><a href='#banner'>WeatherNow.com</a> | By Joseph Canto | &copy;2016</h4>
+    </footer>
 </div>
+
 </html>
