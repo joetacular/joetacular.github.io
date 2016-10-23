@@ -1,12 +1,21 @@
-/*Change the CSS box model
+/*Change the CSS box model*/
 html *{
     box-sizing: border-box;
-    background-color: silver;
 }
-Used to make sure that anything outside of the regular box model gets the same sizing effects
+/*Used to make sure that anything outside of the regular box model gets the same sizing effects*/
 *:before, *:after{
     box-sizing: border-box;
-}*/
+}
+#content {
+    width = 80%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+}
+/*===================================================================================================================================================================
+================================================================================================================================================================================================================================================ Default CSS Code ======================================================================== ========================================================================================================================================================================================================================================================================================================================================*/
 html {
     background-color: #555;
     color: lightgray;
@@ -23,13 +32,16 @@ h2#banner {
     padding: 3px 0px 3px 0px;
     background-color: black;
     border: 3px solid black;
+    width: 100%;
 }
 h2#city {
     margin: 0px;
     padding: 10px 0px 10px 0px;
+    width: 100%;
 }
 nav ul li{
     display: inline;
+    width: 100%;
 }
 nav ul {
     list-style-type: none;
@@ -38,10 +50,14 @@ nav ul {
     padding: 0px 0px 0 2%;
     font-weight: bold;
     font-size: 15px;
+    width: 100%;
 }
 nav#searchBar {
-    margin: 0px 0px 0px 43%;
+    margin: 0 auto;
     padding: 0px;
+    width: 100%;
+    display: inline;
+    float: right;
 }
 ul#report {
     float: left;
@@ -56,6 +72,7 @@ img#sunIcon {
     margin: 0px;
     position: relative;
     left: 20px;
+    width: 40%;
 }
 section#weatherData {
     background-image: url(/images/sky.jpg);
@@ -66,6 +83,7 @@ section#weatherData {
 img#wireframe {
     clear: both;
     padding-top: 0px;
+    width: 100;
 }
 a {
     color: lightgray;
@@ -99,7 +117,6 @@ td {
 td#last {
     border-right: 0px;
 }
-
 img#news1 {
     width: 49%;
     padding: 0px;
@@ -110,19 +127,33 @@ img#news2 {
     padding: 0px;
     margin: 0px;
 }
-section#news table.headlines tr td {
-    padding: 20px;
-    margin: 5px;
-    border: 0px;
-    height: 10px;
-    display: inline;
-}
-section#news table.headlines {
-    border: 0px;
-    padding: 0px;
-    margin: 0px;
-}
 footer {
     clear: both;
     text-align: center;
+}
+section#hourly {
+    display: none;
+}
+section#news {
+    width: 100%;
+}
+
+/*===================================================================================================================================================================
+======================================================================================================================================================================================================================================== Media Query for Tablet Device Screens =========================================================== ========================================================================================================================================================================================================================================================================================================================================*/
+@media screen and (min-width: 600px)
+{
+    /*Enter CSS changes for tablet device screens here*/
+    section#hourly {
+        display: inline-block;
+    }
+}
+
+/*===================================================================================================================================================================
+======================================================================================================================================================================================================================================= Media Query for Desktop & Laptop Screens ========================================================= ========================================================================================================================================================================================================================================================================================================================================*/
+@media screen and (min-width: 1025px)
+{
+    /*Enter CSS changes for laptop and desktop screens here*/
+    section#hourly {
+        display: inline-block;
+    }
 }

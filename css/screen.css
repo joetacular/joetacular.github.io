@@ -1,7 +1,6 @@
 /*Change the CSS box model*/
 html *{
     box-sizing: border-box;
-    background-color: silver;
 }
 /*Used to make sure that anything outside of the regular box model gets the same sizing effects*/
 *:before, *:after{
@@ -9,14 +8,37 @@ html *{
 }
 
 p, h1 {
-    background-color: darkgreen;
     color: white;
-    padding: 12px;
+    padding: 0;
     border: 5px solid #FFFFFF;
-    margin: 100px;
+    margin: 0;
     width: 400px;
 }
 
-/*body{
+#suximage {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-size: 24px;
-}*/
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    background-color: deepskyblue;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}

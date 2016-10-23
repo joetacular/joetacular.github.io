@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    padding: 7px;
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7px;
+}
+
+h1 {
+    font-size: 3em;
+    clear: left;
+}
+
+ul {
+    background-color: black;
+    display: block;
+    padding: 10px;
+    list-style-type: none;
+    box-shadow: 2px 2px 30px lime;
+    clear: left;
+    width: 23.5%
+}
+
+a {
+    text-decoration: none;
+    color: teal;
+}
+
+a:hover {
+    color: cyan;
+    border: 1px solid gray;
+}
+
+a:visited {
+    color: darkgray;
+}
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#sitelogo {
+    float: left;
+    width: 120px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+html {
+    background-image:url(/images/mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
