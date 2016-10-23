@@ -8,28 +8,34 @@
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
 <div id='content'>
-    <header>
+    <header id='mobileHeader'>
         <img src='/images/logo.png' alt='site logo' id='logo'>
         <h2 id='banner'>WeatherNow.com</h2>
     </header>
-    <nav>
+    <header id='header2'>
+        <h2 id='banner'>WeatherNow.com</h2>
+    </header>
+    <nav id='top-nav'>
         <ul>
-            <li><a href='franklin.html'>Franklin, ID | </a></li>
-            <li><a href='greenville.html'>Greenville, SC | </a></li>
+            <li><a href='franklin.html'>Franklin, ID </a></li>
+            <li class='bar'>|</li>
+            <li><a href='greenville.html'>Greenville, SC</a></li>
+            <li class='bar'>|</li>
             <li><a href='springfield.html'>Springfield, IL</a></li>
         </ul>
     </nav>
-    <p>
-        <a href='#' id='alerts'>Local Weather Alerts</a>
-        <input type='text' id='searchBar' placeholder='Search...'>
-    </p>
     <main>
+        <p>
+            <a href='#' id='alerts'>Local Weather Alerts</a>
+            <input type='text' id='searchBar' placeholder='Search...'>
+        </p>
         <section id='mobileWeatherData'>
             <h1 id='mobilecity'>Franklin, ID</h1>
             <h2>Hi: 90&deg;</h2>
             <h2>Lo: 66&deg;</h2>
             <img src='/images/sun.png' alt='sunny icon' id='mobilesunIcon'>
         </section>
+        <img src='/images/logo.png' alt='site logo' id='logo2'>
         <section id='weatherData'>
             <h2 id='city'>Franklin, ID</h2>
             <img src='/images/sun.png' alt='sunny icon' id='sunIcon'>
@@ -45,6 +51,7 @@
                 <li>ZIP: 83237</li>
             </ul>
         </section>
+        <a href='#'><img src='/images/ad.jpg' alt='shell advertisement' id='ad'></a>
         <section id='hourly'>
             <h2>Hourly</h2>
             <table id='hourlytemps'>
@@ -140,6 +147,14 @@
                 <p>Meteor Showers</p>
             </div>
         </section>
+        <aside id='relatedNews'>
+            <h2>More News Stories</h2>
+            <img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'>
+            <p><a href='#'>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+            <p><a href='#'>New Weather Tech - See the newest weather-related technology in action</a></p>
+            <p><a href='#'>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+            <p><a href='#'>Beyond Belief - The worst storms we've ever seen</a></p>
+        </aside>
         <section id='mobileSketches'>
             <h3>iPhone Wireframe Sketch:</h3>
             <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
@@ -158,7 +173,21 @@
         </section>
     </main>
     <footer>
-        <h4><a href='#banner'>WeatherNow.com</a> | By Joseph Canto | &copy;2016</h4>
+        <nav id='bottom-nav'>
+            <ul>
+                <li><a href='#'>About Us</a></li>
+                <li class='bar'>|</li>
+                <li><a href='#'>Terms of Use</a></li>
+                <li class='bar'>|</li>
+                <li><a href='#'>Careers</a></li>
+                <li class='bar'>|</li>
+                <li><a href='#'>WeatherNow.com</a></li>
+            </ul>
+            <ul>
+                <li>Made by Joseph Canto</li>
+                <li>&copy; 2016</li>
+            </ul>
+        </nav>
     </footer>
 </div>
 
