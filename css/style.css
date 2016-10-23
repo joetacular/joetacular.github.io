@@ -62,11 +62,18 @@ nav ul {
     margin: 0px;
     padding: 0px;
 }
-#sunIcon {
+#mobilesunIcon {
     width: 50%;
     margin-left: 50%;
     position: relative;
     bottom: 125px;
+}
+#sunIcon {
+    width: 30%;
+    float: right;
+    position: relative;
+    left: 80px;
+    display: hidden;
 }
 .wireframes {
     clear: both;
@@ -105,7 +112,7 @@ section#hourly {
     background-image: url(/images/sky.jpg);
     background-size: cover;
     color: white;
-    padding: 0% 20% 60% 2%;
+    padding: 0px 200px 350px 5px;
     clear: both;
     display: none;
 }
@@ -157,7 +164,6 @@ section#hourly {
     #weatherData {
         display: block;
         font-size: 2em;
-        padding-bottom: 400px;
     }
     img {
         width: 30%;
@@ -166,6 +172,12 @@ section#hourly {
         width: 60px;
         position: relative;
         top: 5px;
+    }
+    #sunIcon {
+        display: auto;
+    }
+    #mobilesunIcon {
+        display: none;
     }
 }
 
@@ -190,7 +202,7 @@ section#hourly {
     #weatherData {
         display: block;
         font-size: 2em;
-        padding-bottom: 400px;
+        padding-bottom: 350px;
     }
     img {
         width: 30%;
@@ -199,5 +211,11 @@ section#hourly {
         width: 75px;
         position: relative;
         top: 12px;
+    }
+    #sunIcon {
+        display: block;
+    }
+    #mobilesunIcon {
+        display: none;
     }
 }
