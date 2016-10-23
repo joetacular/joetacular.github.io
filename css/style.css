@@ -37,7 +37,7 @@ a#alerts {
     padding-top: 5px;
     padding-right: 3px;
 }
-#banner {
+.banner {
     margin: 0px;
     padding: 3px 0px;
     background-color: black;
@@ -214,7 +214,7 @@ section#hourly {
     #mobileNews {
         display: none;
     }
-    #banner {
+    .banner {
         height: 70px;
         font-size: 3em;
     }
@@ -312,7 +312,7 @@ section#hourly {
     #mobileNews {
         display: none;
     }
-    #banner {
+    .banner {
         height: 100px;
         font-size: 5em;
     }
