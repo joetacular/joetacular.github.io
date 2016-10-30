@@ -412,7 +412,7 @@ header {
 header h2 {
     display: inline-flex;
     margin: 0 0;
-    font-size: 8.4vw;
+    font-size: 8vw;
 }
 /*end page banner*/
 
@@ -613,19 +613,21 @@ footer ul li {
     }
     #ad {
         display: inherit;
-        width: 150px;
+        width: 145px;
+        height: 313.5px;
+        margin-left: 5px;
     }
     header {
+        display: flex;
         text-align: center;
     }
-    #logo {
-        display: none;
+    header h2 {
+        font-size: 40pt;
     }
-    #logo2 {
-        display: inherit;
-        align-self: flex-start;
-        width: 15%;
-        height: 15%;
+    #logo {
+        width: 60px;
+        height: 60px;
+        margin: 2px;
     }
     #alerts {
         border: none;
@@ -669,9 +671,13 @@ footer ul li {
         width: 30%;
         align-items: center;
     }
+    .weatherIcon {
+        width: 120px;
+        height: 120px;
+    }
 }
 
-@media screen and (min-width: 1022px) {
+@media screen and (min-width: 1025px) {
     #weatherData ul li strong {
         font-size: 30px;
     }
@@ -692,7 +698,12 @@ footer ul li {
         max-width: 175px;
     }
     #ad {
-        width: 250px;
-        height: 350px;
+        width: 235px;
+        height: 375px;
+        margin-left: 5px;
+    }
+    .weatherIcon {
+        width: 200px;
+        height: 200px;
     }
 }
