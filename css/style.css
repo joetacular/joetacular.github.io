@@ -1,387 +1,4 @@
-/*
-===================================================================================================================================================================
-============================================================================================================================================================================================================================================ Default CSS Code ======================================================================== ======================================================================================================================================================================================================================================================================================================================================*/
-/*
-html {
-    background-color: #555;
-    color: lightgray;
-    font-family: sans-serif;
-}
-h1,h2,h3,h4,h5,h6 {
-    font-family: serif;
-}
-#content {
-    max-width: 960px;
-    margin: 0 auto;
-}
-img {
-    width: 100%;
-}
-.bar {
-    font-size: 1.5em;
-}
-a#alerts {
-    font-size: 140%;
-    padding: 0;
-}
-#logo {
-    float: left;
-    width: 10%;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 3px;
-}
-.banner {
-    margin: 0px;
-    padding: 3px 0px;
-    background-color: black;
-    border: 3px solid black;
-    width: 100%;
-}
-#city {
-    margin: 0px;
-    padding: 10px 0px 10px 0px;
-    width: 100%;
-}
-#top-nav ul li {
-    display: inline;
-}
-#top-nav ul li a {
-    font-size: 96%;
-}
-a:hover {
-    color: black;
-}
-a:visited {
-    color: gold;
-}
-#top-nav ul {
-    list-style-type: none;
-    margin: 3px 0px 7px 2px;
-    padding: 0px;
-    font-weight: bold;
-    font-size: 15px;
-    width: 100%;
-}
-#searchBar {
-    float: right;
-    width: 30%;
-}
-#report {
-    float: left;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-#mobilesunIcon {
-    width: 50%;
-    margin-left: 50%;
-    position: relative;
-    bottom: 125px;
-}
-#sunIcon {
-    width: 30%;
-    float: right;
-    position: relative;
-    left: 80px;
-    display: none;
-}
-a {
-    color: lightgray;
-    text-decoration: none;
-}
-#hourlytemps {
-    border: 2px solid white;
-    display: block;
-    overflow: scroll;
-    max-width: 960px;
-}
-#hourlytemps thead td {
-    border: 1px solid white;
-    padding: 0px 10px;
-    text-align: center;
-    height: 20px;
-}
-#hourlytemps tbody td {
-    border: 1px solid white;
-    text-align: center;
-    height: 60px;
-}
-footer {
-    clear: both;
-    text-align: center;
-}
-section#hourly {
-    display: none;
-}
-#weatherData {
-    background-image: url(/images/sky.jpg);
-    background-size: cover;
-    color: white;
-    padding: 0px 200px 350px 5px;
-    clear: both;
-    display: none;
-}
-#mobileWeatherData {
-    background-image: url(/images/sky.jpg);
-    background-size: cover;
-    color: white;
-    padding: 0px 10px;
-}
-#alerts {
-    color: #a00;
-    background-color: black;
-    font-size: 150%;
-    width: 100%;
-}
-#news {
-    width: 70%;
-    height: 450px;
-    float: left;
-    display: none;
-}
-#news-top-row {
-    width: 100%;
-    height: 200px;
-}
-#news-bottom-row {
-    width: 100%;
-    height: 200px;
-    margin: 50px 0px;
-}
-#news img {
-    width: 31%;
-    height: 75%;
-    margin: 0px 5px 10px 5px;
-}
-#news-top-row p {
-    display: inline;
-    margin: 0px 8.5%;
-}
-#news-bottom-row p {
-    display: inline;
-    margin: 0px 8.3%;
-}
-#sketches h3 {
-    margin: 0px 6.4%;
-}
-#sketches {
-    margin: 20px -28px;
-    padding: 0px;
-    float: left;
-    display: none;
-    text-align: center;
-}
-.wireframes {
-    max-width: 100%;
-    margin: 1%;
-}
-#logo2 {
-    display: none;
-}
-#header2 {
-    display: none;
-}
-#ad {
-    display: none;
-}
-#bottom-nav ul li {
-    display: inline;
-    list-style-type: none;
-}
-#footer-info nav ul li {
-    display: inline;
-    list-style-type: none;
-}
-*/
-/*
-===================================================================================================================================================================
-==================================================================================================================================================================================================================================== Media Query for Tablet Device Screens =========================================================== ======================================================================================================================================================================================================================================================================================================================================*/
-/*
-@media screen and (min-width: 600px)
-{
-    section#hourly {
-        display: inline-block;
-    }
-    #news {
-        display: inline-block;
-    }
-    #mobileNews {
-        display: none;
-    }
-    .banner {
-        height: 70px;
-        font-size: 3em;
-    }
-    #top-nav li a {
-        font-size: 1.25em;
-    }
-    #mobileWeatherData {
-        display: none;
-    }
-    #weatherData {
-        display: inline-block;
-        font-size: 1.25em;
-        padding-bottom: 15px;
-        margin: 0px 12.0em;
-    }
-    img {
-        width: 30%;
-    }
-    #sunIcon {
-        display: inline-block;
-        margin: 0px -105px -200px 0px;
-        width: 175px;
-        position: relative;
-        bottom: 30px;
-        right: 20px;
-    }
-    #mobilesunIcon {
-        display: none;
-    }
-    #mobileSketches {
-        display: none;
-    }
-    #sketches {
-        display: inline;
-    }
-    #sketches h3 {
-        display: inline;
-    }
-    .bar {
-        font-size: 1.75em;
-    }
-    a#alerts {
-        font-size: 160%;
-    }
-    #logo {
-        display: none;
-    }
-    #logo2 {
-        display: inline-block;
-        float: left;
-        width: 200px;
-        margin-right: -200px;
-    }
-    #mobileHeader {
-        display: none;
-    }
-    #header2 {
-        display: block;
-    }
-    #ad {
-        display: block;
-        float: right;
-        margin: -275px 0px;
-        width: 200px;
-        height: 275px
-    }
-    #relatedNews {
-        float: right;
-        width: 30%;
-        text-align: center;
-        border: 1px solid white;
-        height: 450px;
-    }
-    #relatedNews p {
-        text-align: left;
-        padding: 2px 4px;
-        margin: 18px 0px;
-    }
-    #wolf {
-        width: 100%;
-    }
-}
-*/
-/*
-===================================================================================================================================================================
-==================================================================================================================================================================================================================================== Media Query for Desktop & Laptop Screens ======================================================== ======================================================================================================================================================================================================================================================================================================================================
-*/
-/*
-@media screen and (min-width: 1025px)
-{
-    section#hourly {
-        display: inline-block;
-    }
-    #news {
-        display: inline-block;
-    }
-    #mobileNews {
-        display: none;
-    }
-    .banner {
-        height: 100px;
-        font-size: 5em;
-    }
-    #weatherData {
-        display: inline-block;
-        font-size: 1.5em;
-        padding-bottom: 15px;
-        margin: 0px 8em;
-        padding-right: 160px;
-    }
-    img {
-        width: 30%;
-    }
-    #sunIcon {
-        display: inline-block;
-        margin: -40px;
-        width: 175px;
-        position: relative;
-        top: 10px;
-        right: 90px;
-    }
-    #mobilesunIcon {
-        display: none;
-    }
-    #mobileSketches {
-        display: none;
-    }
-    #sketches {
-        display: inline;
-    }
-    #sketches h3 {
-        display: inline;
-    }
-    a#alerts {
-        font-size: 180%;
-    }
-    #logo {
-        display: none;
-    }
-    #logo2 {
-        display: inline-block;
-        float: left;
-        width: 200px;
-        margin-right: -184px;
-    }
-    #mobileHeader {
-        display: none;
-    }
-    #header2 {
-        display: block;
-    }
-    #ad {
-        display: block;
-        float: right;
-        margin: -325px 0px;
-        width: 200px;
-        height: 325px;
-    }
-    top-nav li a {
-        font-size: 2.0em;
-    }
-    #relatedNews {
-        float: right;
-        width: 30%;
-        height: 455px;
-    }
-}
-*/
-/*
-======================================================================================================================================================================================================================================================================================================================================
-*/
-/*Enter the base CSS Code here for the Franklin and Greenville Weather Pages (with flexbox in mind)*/
+/*CSS code with Flexbox (for mobile - default)*/
 *{
     box-sizing: border-box;
 }
@@ -524,17 +141,18 @@ td {
 #news {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
     text-align: center;
     width: 100%;
-}
-.newsImages {
-    flex-flow: column wrap;
 }
 #news img {
     width: 100%;
 }
 #relatedNews {
+    align-self: center;
     width: 100%;
+    min-width: 200px;
+    max-width: 400px;
     padding: 2px;
     border: 1px solid white;
 }
@@ -553,7 +171,7 @@ td {
 }
 .wireframes {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
 }
 /*end sketches*/
@@ -598,6 +216,10 @@ footer ul li {
         padding: 2px;
         background-repeat: round;
         height: 220px;
+    }
+    #weatherData ul li h3 {
+        font-size: 20pt;
+        margin-bottom: 4px;
     }
     .idaho .nonMobile {
         display: inherit;
@@ -651,11 +273,12 @@ footer ul li {
         margin: 0 1%;
     }
     #relatedNews {
-        width: 20%;
+        width: 25%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        align-self: flex-start;
     }
     #searchBar {
         width: 144px;
@@ -663,13 +286,16 @@ footer ul li {
     }
     #row2 {
         flex-flow: row nowrap;
+        width: 100%;
     }
-    #relatedNews img {
-        max-width: 100%;
+    #row3 {
+        display: inline-flex;
+        flex-flow: row nowrap;
+        width: 100%;
     }
-    .sketchImages {
-        width: 30%;
-        align-items: center;
+    .wireframes {
+        padding: 3px;
+        max-width: 400px;
     }
     .weatherIcon {
         width: 120px;
@@ -684,17 +310,16 @@ footer ul li {
     }
     #weatherData ul li h3 {
         font-size: 25pt;
+        margin-top: -50px;
     }
     #weatherData {
         height: 375px;
     }
     .idaho .nonMobile {
-        display: inherit;
         background-color: rgba(5,5,5,0.1);
         max-width: 175px;
     }
     .south-carolina .nonMobile {
-        display: inherit;
         background-color: rgba(160,160,160,0.2);
         max-width: 175px;
     }
@@ -711,3 +336,387 @@ footer ul li {
         width: 235px;
     }
 }
+
+/*Old CSS code*/
+/*=======================================================================================================================================================================
+============================================================================================================================================================================================================================================ Default CSS Code ==================================================================================== ================================================================================================================================================================================================================================================================================================================================================*/
+/*
+html {
+background-color: #555;
+color: lightgray;
+font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: serif;
+}
+#content {
+max-width: 960px;
+margin: 0 auto;
+}
+img {
+width: 100%;
+}
+.bar {
+font-size: 1.5em;
+}
+a#alerts {
+font-size: 140%;
+padding: 0;
+}
+#logo {
+float: left;
+width: 10%;
+padding-left: 5px;
+padding-top: 5px;
+padding-right: 3px;
+}
+.banner {
+margin: 0px;
+padding: 3px 0px;
+background-color: black;
+border: 3px solid black;
+width: 100%;
+}
+#city {
+margin: 0px;
+padding: 10px 0px 10px 0px;
+width: 100%;
+}
+#top-nav ul li {
+display: inline;
+}
+#top-nav ul li a {
+font-size: 96%;
+}
+a:hover {
+color: black;
+}
+a:visited {
+color: gold;
+}
+#top-nav ul {
+list-style-type: none;
+margin: 3px 0px 7px 2px;
+padding: 0px;
+font-weight: bold;
+font-size: 15px;
+width: 100%;
+}
+#searchBar {
+float: right;
+width: 30%;
+}
+#report {
+float: left;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+#mobilesunIcon {
+width: 50%;
+margin-left: 50%;
+position: relative;
+bottom: 125px;
+}
+#sunIcon {
+width: 30%;
+float: right;
+position: relative;
+left: 80px;
+display: none;
+}
+a {
+color: lightgray;
+text-decoration: none;
+}
+#hourlytemps {
+border: 2px solid white;
+display: block;
+overflow: scroll;
+max-width: 960px;
+}
+#hourlytemps thead td {
+border: 1px solid white;
+padding: 0px 10px;
+text-align: center;
+height: 20px;
+}
+#hourlytemps tbody td {
+border: 1px solid white;
+text-align: center;
+height: 60px;
+}
+footer {
+clear: both;
+text-align: center;
+}
+section#hourly {
+display: none;
+}
+#weatherData {
+background-image: url(/images/sky.jpg);
+background-size: cover;
+color: white;
+padding: 0px 200px 350px 5px;
+clear: both;
+display: none;
+}
+#mobileWeatherData {
+background-image: url(/images/sky.jpg);
+background-size: cover;
+color: white;
+padding: 0px 10px;
+}
+#alerts {
+color: #a00;
+background-color: black;
+font-size: 150%;
+width: 100%;
+}
+#news {
+width: 70%;
+height: 450px;
+float: left;
+display: none;
+}
+#news-top-row {
+width: 100%;
+height: 200px;
+}
+#news-bottom-row {
+width: 100%;
+height: 200px;
+margin: 50px 0px;
+}
+#news img {
+width: 31%;
+height: 75%;
+margin: 0px 5px 10px 5px;
+}
+#news-top-row p {
+display: inline;
+margin: 0px 8.5%;
+}
+#news-bottom-row p {
+display: inline;
+margin: 0px 8.3%;
+}
+#sketches h3 {
+margin: 0px 6.4%;
+}
+#sketches {
+margin: 20px -28px;
+padding: 0px;
+float: left;
+display: none;
+text-align: center;
+}
+.wireframes {
+max-width: 100%;
+margin: 1%;
+}
+#logo2 {
+display: none;
+}
+#header2 {
+display: none;
+}
+#ad {
+display: none;
+}
+#bottom-nav ul li {
+display: inline;
+list-style-type: none;
+}
+#footer-info nav ul li {
+display: inline;
+list-style-type: none;
+}
+*/
+/*
+===================================================================================================================================================================
+==================================================================================================================================================================================================================================== Media Query for Tablet Device Screens =========================================================== ======================================================================================================================================================================================================================================================================================================================================*/
+/*
+@media screen and (min-width: 600px)
+{
+section#hourly {
+display: inline-block;
+}
+#news {
+display: inline-block;
+}
+#mobileNews {
+display: none;
+}
+.banner {
+height: 70px;
+font-size: 3em;
+}
+#top-nav li a {
+font-size: 1.25em;
+}
+#mobileWeatherData {
+display: none;
+}
+#weatherData {
+display: inline-block;
+font-size: 1.25em;
+padding-bottom: 15px;
+margin: 0px 12.0em;
+}
+img {
+width: 30%;
+}
+#sunIcon {
+display: inline-block;
+margin: 0px -105px -200px 0px;
+width: 175px;
+position: relative;
+bottom: 30px;
+right: 20px;
+}
+#mobilesunIcon {
+display: none;
+}
+#mobileSketches {
+display: none;
+}
+#sketches {
+display: inline;
+}
+#sketches h3 {
+display: inline;
+}
+.bar {
+font-size: 1.75em;
+}
+a#alerts {
+font-size: 160%;
+}
+#logo {
+display: none;
+}
+#logo2 {
+display: inline-block;
+float: left;
+width: 200px;
+margin-right: -200px;
+}
+#mobileHeader {
+display: none;
+}
+#header2 {
+display: block;
+}
+#ad {
+display: block;
+float: right;
+margin: -275px 0px;
+width: 200px;
+height: 275px
+}
+#relatedNews {
+float: right;
+width: 30%;
+text-align: center;
+border: 1px solid white;
+height: 450px;
+}
+#relatedNews p {
+text-align: left;
+padding: 2px 4px;
+margin: 18px 0px;
+}
+#wolf {
+width: 100%;
+}
+}
+*/
+/*
+===================================================================================================================================================================
+==================================================================================================================================================================================================================================== Media Query for Desktop & Laptop Screens ======================================================== ======================================================================================================================================================================================================================================================================================================================================
+*/
+/*
+@media screen and (min-width: 1025px)
+{
+section#hourly {
+display: inline-block;
+}
+#news {
+display: inline-block;
+}
+#mobileNews {
+display: none;
+}
+.banner {
+height: 100px;
+font-size: 5em;
+}
+#weatherData {
+display: inline-block;
+font-size: 1.5em;
+padding-bottom: 15px;
+margin: 0px 8em;
+padding-right: 160px;
+}
+img {
+width: 30%;
+}
+#sunIcon {
+display: inline-block;
+margin: -40px;
+width: 175px;
+position: relative;
+top: 10px;
+right: 90px;
+}
+#mobilesunIcon {
+display: none;
+}
+#mobileSketches {
+display: none;
+}
+#sketches {
+display: inline;
+}
+#sketches h3 {
+display: inline;
+}
+a#alerts {
+font-size: 180%;
+}
+#logo {
+display: none;
+}
+#logo2 {
+display: inline-block;
+float: left;
+width: 200px;
+margin-right: -184px;
+}
+#mobileHeader {
+display: none;
+}
+#header2 {
+display: block;
+}
+#ad {
+display: block;
+float: right;
+margin: -325px 0px;
+width: 200px;
+height: 325px;
+}
+top-nav li a {
+font-size: 2.0em;
+}
+#relatedNews {
+float: right;
+width: 30%;
+height: 455px;
+}
+}
+*/
+/*
+======================================================================================================================================================================================================================================================================================================================================
+*/
