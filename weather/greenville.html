@@ -1,36 +1,188 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
     <title>Greenville, SC | Weather Report</title>
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
-<header>
-    <h2>Weather Site Banner</h2>
-</header>
-<nav>
-    <ul>
-        <li><a href='franklin.html'>Franklin, ID</a></li>
-        <li><a href='greenville.html'>Greenville, SC</a></li>
-        <li><a href='springfield.html'>Springfield, IL</a></li>
-    </ul>
-</nav>
-<main>
-    <h2>Weather Report for Greenville, SC</h2>
-    <ul>
-        <li>High: 84&deg;</li>
-        <li>Low: 55&deg;</li>
-        <li>Precip: 70</li>
-        <li>Wind: 15 - 20</li>
-        <li>Direction: West</li>
-        <li>Summary: Afternoon Thunderstorms</li>
-        <li>Longitude: -82.362997&deg;</li>
-        <li>Latitude: 34.836902&deg;</li>
-        <li>ZIP: 29601</li>
-    </ul>
-</main>
-<footer>
-    <h2>Footer goes here.</h2>
-</footer>
+<div id='content'>
+    <header>
+        <img src='/images/logo.png' alt='site logo' id='logo'>
+        <h2 class='banner'>WeatherNow.com</h2>
+    </header>
+    <nav id='top-nav'>
+        <ul>
+            <li><a href='franklin.html'>Franklin, ID </a></li>
+            <li class='bar'>|</li>
+            <li><a href='greenville.html'>Greenville, SC</a></li>
+            <li class='bar'>|</li>
+            <li><a href='springfield.html'>Springfield, IL</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p id='alerts'>
+            <a href=''>Local Weather Alerts</a>
+            <input type='text' id='searchBar' placeholder='Search...'>
+        </p>
+        <div id='row1'>
+            <img src='/images/logo.png' alt='site logo' id='logo2'>
+            <section class='south-carolina' id='weatherData'>
+                <h2>Greenville, SC</h2>
+                <ul>
+                    <li><strong>Hi: 84&deg;</strong></li>
+                    <li><strong>Lo: 55&deg;</strong></li>
+                    <li class='nonMobile'>Precip: 70</li>
+                    <li class='nonMobile'>Wind: 15 - 20</li>
+                    <li class='nonMobile'>Direction: West</li>
+                    <li class='nonMobile'>Summary: Afternoon Thunderstorms</li>
+                    <li class='nonMobile'>Longitude: -82.362997&deg;</li>
+                    <li class='nonMobile'>Latitude: 34.836902&deg;</li>
+                    <li class='nonMobile'>ZIP: 29601</li>
+                </ul>
+                <img src='/images/logo.png' alt='thunder icon' class='weatherIcon' id='thunderIcon'>
+            </section>
+            <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
+        </div>
+        <h2>Hourly Temperatures</h2>
+        <section id='hourly'>
+            <table id='hourlytemps'>
+                <thead>
+                    <tr>
+                        <td>12A.M.</td>
+                        <td>1A.M.</td>
+                        <td>2A.M.</td>
+                        <td>3A.M.</td>
+                        <td>4A.M.</td>
+                        <td>5A.M.</td>
+                        <td>6A.M.</td>
+                        <td>7A.M.</td>
+                        <td>8A.M.</td>
+                        <td>9A.M.</td>
+                        <td>10A.M.</td>
+                        <td>11A.M.</td>
+                        <td>12P.M.</td>
+                        <td>1P.M.</td>
+                        <td>2P.M.</td>
+                        <td>3P.M.</td>
+                        <td>4P.M.</td>
+                        <td>5P.M.</td>
+                        <td>6P.M.</td>
+                        <td>7P.M.</td>
+                        <td>8P.M.</td>
+                        <td>9P.M.</td>
+                        <td>10P.M.</td>
+                        <td>11P.M.</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>55&deg;</td>
+                        <td>56&deg;</td>
+                        <td>56&deg;</td>
+                        <td>56&deg;</td>
+                        <td>57&deg;</td>
+                        <td>57&deg;</td>
+                        <td>58&deg;</td>
+                        <td>62&deg;</td>
+                        <td>63&deg;</td>
+                        <td>67&deg;</td>
+                        <td>70&deg;</td>
+                        <td>73&deg;</td>
+                        <td>77&deg;</td>
+                        <td>80&deg;</td>
+                        <td>84&deg;</td>
+                        <td>83&deg;</td>
+                        <td>83&deg;</td>
+                        <td>80&deg;</td>
+                        <td>79&deg;</td>
+                        <td>74&deg;</td>
+                        <td>70&deg;</td>
+                        <td>68&deg;</td>
+                        <td>60&deg;</td>
+                        <td>58&deg;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <h2 id='newsHeading'>News</h2>
+        <div id='row2'>
+            <section id='news'>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                    <a href=''>
+                        <p>Terrible Storms!</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                    <a href=''>
+                        <p>Flash Floods!</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+                    <a href=''>
+                        <p>Heavy Snowfalls</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+                    <a href=''>
+                        <p>Volcanic Eruptions</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+                    <a href=''>
+                        <p>Hurricanes</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+                    <a href=''>
+                        <p>Meteor Showers</p>
+                    </a>
+                </figure>
+            </section>
+            <aside id='relatedNews'>
+                <h3>More News Stories</h3>
+                <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
+                <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+                <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
+                <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+            </aside>
+        </div>
+        <div id='row3'>
+            <figure class='sketchImages'>
+                <p>iPhone Wireframe Sketch:</p>
+                <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
+            </figure>
+            <figure class='sketchImages'>
+                <p>iPad Wireframe Sketch:</p>
+                <img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
+            </figure>
+            <figure class='sketchImages'>
+                <p>Browser Wireframe Sketch:</p>
+                <img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <nav id='bottom-nav'>
+            <ul>
+                <li><a href=''>About Us</a></li>
+                <li class='bar'>|</li>
+                <li><a href=''>Terms of Use</a></li>
+                <li class='bar'>|</li>
+                <li><a href=''>Careers</a></li>
+                <li class='bar'>|</li>
+                <li><a href='franklin.html'>WeatherNow.com</a></li>
+            </ul>
+            <p>Made by Joseph Canto &copy; 2016</p>
+        </nav>
+    </footer>
+</div>
+
 </html>

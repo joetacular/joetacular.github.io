@@ -8,11 +8,8 @@
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
 <div id='content'>
-    <header id='mobileHeader'>
+    <header>
         <img src='/images/logo.png' alt='site logo' id='logo'>
-        <h2 class='banner'>WeatherNow.com</h2>
-    </header>
-    <header id='header2'>
         <h2 class='banner'>WeatherNow.com</h2>
     </header>
     <nav id='top-nav'>
@@ -25,35 +22,31 @@
         </ul>
     </nav>
     <main>
-        <p>
-            <a href='#' id='alerts'>Local Weather Alerts</a>
+        <p id='alerts'>
+            <a href=''>Local Weather Alerts</a>
             <input type='text' id='searchBar' placeholder='Search...'>
         </p>
-        <section id='mobileWeatherData'>
-            <h1 id='mobilecity'>Franklin, ID</h1>
-            <h2>Hi: 90&deg;</h2>
-            <h2>Lo: 66&deg;</h2>
-            <img src='/images/sun.png' alt='sunny icon' id='mobilesunIcon'>
-        </section>
-        <img src='/images/logo.png' alt='site logo' id='logo2'>
-        <section id='weatherData'>
-            <h2 id='city'>Franklin, ID</h2>
-            <img src='/images/sun.png' alt='sunny icon' id='sunIcon'>
-            <ul id='report'>
-                <li><strong>High: 90&deg;</strong></li>
-                <li><strong>Low: 66&deg;</strong></li>
-                <li>Precip: 0</li>
-                <li>Wind: 1 - 5</li>
-                <li>Direction: Southwest</li>
-                <li>Summary: Sunny</li>
-                <li>Longitude: -111.803757&deg;</li>
-                <li>Latitude: 42.011902&deg;</li>
-                <li>ZIP: 83237</li>
-            </ul>
-        </section>
-        <a href='#'><img src='/images/ad.jpg' alt='shell advertisement' id='ad'></a>
+        <div id='row1'>
+            <img src='/images/logo.png' alt='site logo' id='logo2'>
+            <section class='idaho' id='weatherData'>
+                <h2>Franklin, ID</h2>
+                <ul>
+                    <li><strong>Hi: 90&deg;</strong></li>
+                    <li><strong>Lo: 66&deg;</strong></li>
+                    <li class='nonMobile'>Precip: 0</li>
+                    <li class='nonMobile'>Wind: 1 - 5</li>
+                    <li class='nonMobile'>Direction: Southwest</li>
+                    <li class='nonMobile'>Summary: Sunny</li>
+                    <li class='nonMobile'>Longitude: -111.803757&deg;</li>
+                    <li class='nonMobile'>Latitude: 42.011902&deg;</li>
+                    <li class='nonMobile'>ZIP: 83237</li>
+                </ul>
+                <img src='/images/sun.png' alt='sun icon' class='weatherIcon' id='sunIcon'>
+            </section>
+            <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
+        </div>
+        <h2>Hourly Temperatures</h2>
         <section id='hourly'>
-            <h2>Hourly</h2>
             <table id='hourlytemps'>
                 <thead>
                     <tr>
@@ -113,81 +106,123 @@
                 </tbody>
             </table>
         </section>
-        <section id='mobileNews'>
-            <h2>News</h2>
-            <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
-            <p>Terrible Storms!</p>
-            <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
-            <p>Flash Floods!</p>
-            <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
-            <p>Heavy Snowfalls</p>
-            <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
-            <p>Volcanic Eruptions</p>
-            <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
-            <p>Hurricanes</p>
-            <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
-            <p>Meteor Showers</p>
-        </section>
-        <section id='news'>
-            <div id='news-top-row'>
-                <h2>News</h2>
-                <a href='#'><img src='/images/news1.jpg' alt='lightning storm'></a>
-                <a href='#'><img src='/images/news2.jpg' alt='flash flood'></a>
-                <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
-                <a href='#'><p>Terrible Storms</p></a>
-                <a href='#'><p>Flash Floods</p></a>
-                <a href='#'><p>Heavy Snowfalls</p></a>
-            </div>
-            <div id='news-bottom-row'>
-                <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
-                <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
-                <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
-                <a href='#'><p>Volcanic Eruptions</p></a>
-                <a href='#'><p>Hurricanes</p></a>
-                <a href='#'><p>Meteor Showers</p></a>
-            </div>
-        </section>
-        <aside id='relatedNews'>
-            <h2>More News Stories</h2>
-            <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
-            <p><a href='#'>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
-            <p><a href='#'>New Weather Tech - See the newest weather-related technology in action</a></p>
-            <p><a href='#'>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
-        </aside>
-        <section id='mobileSketches'>
-            <h3>iPhone Wireframe Sketch:</h3>
-            <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
-            <h3>iPad Wireframe Sketch:</h3>
-            <img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
-            <h3>Browser Wireframe Sketch:</h3>
-            <img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
-        </section>
-        <section id='sketches'>
-            <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
-            <img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
-            <img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
-            <h3>iPhone Wireframe Sketch</h3>
-            <h3>iPad Wireframe Sketch</h3>
-            <h3>Browser Wireframe Sketch</h3>
-        </section>
+        <h2 id='newsHeading'>News</h2>
+        <div id='row2'>
+            <section id='news'>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                    <a href=''>
+                        <p>Terrible Storms!</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                    <a href=''>
+                        <p>Flash Floods!</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+                    <a href=''>
+                        <p>Heavy Snowfalls</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+                    <a href=''>
+                        <p>Volcanic Eruptions</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+                    <a href=''>
+                        <p>Hurricanes</p>
+                    </a>
+                </figure>
+                <figure class='newsImages'>
+                    <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+                    <a href=''>
+                        <p>Meteor Showers</p>
+                    </a>
+                </figure>
+            </section>
+            <aside id='relatedNews'>
+                <h3>More News Stories</h3>
+                <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
+                <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+                <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
+                <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+            </aside>
+        </div>
+        <div id='row3'>
+            <figure class='sketchImages'>
+                <p>iPhone Wireframe Sketch:</p>
+                <img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
+            </figure>
+            <figure class='sketchImages'>
+                <p>iPad Wireframe Sketch:</p>
+                <img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
+            </figure>
+            <figure class='sketchImages'>
+                <p>Browser Wireframe Sketch:</p>
+                <img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
+            </figure>
+        </div>
     </main>
     <footer>
         <nav id='bottom-nav'>
             <ul>
-                <li><a href='#'>About Us</a></li>
+                <li><a href=''>About Us</a></li>
                 <li class='bar'>|</li>
-                <li><a href='#'>Terms of Use</a></li>
+                <li><a href=''>Terms of Use</a></li>
                 <li class='bar'>|</li>
-                <li><a href='#'>Careers</a></li>
+                <li><a href=''>Careers</a></li>
                 <li class='bar'>|</li>
-                <li><a href='#'>WeatherNow.com</a></li>
+                <li><a href='franklin.html'>WeatherNow.com</a></li>
             </ul>
-            <ul>
-                <li>Made by Joseph Canto</li>
-                <li>&copy; 2016</li>
-            </ul>
+            <p>Made by Joseph Canto &copy; 2016</p>
         </nav>
     </footer>
 </div>
 
 </html>
+
+<!--Extra HTML code - might not be necessary-->
+<!--<header id='header2'>
+<h2 class='banner'>WeatherNow.com</h2>
+</header>-->
+<!--<img src='/images/sun.png' alt='sunny icon' id='mobilesunIcon'>-->
+<!--<img src='/images/logo.png' alt='site logo' id='logo2'>-->
+<!--<section id='mobileWeatherData'>
+<h1 id='mobilecity'>Franklin, ID</h1>
+<h2>Hi: 90&deg;</h2>
+<h2>Lo: 66&deg;</h2>
+</section>-->
+<!--<section id='news2'>
+<div id='news-top-row'>
+<h2>News</h2>
+<a href='#'><img src='/images/news1.jpg' alt='lightning storm'></a>
+<a href='#'><img src='/images/news2.jpg' alt='flash flood'></a>
+<a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+<a href='#'><p>Terrible Storms</p></a>
+<a href='#'><p>Flash Floods</p></a>
+<a href='#'><p>Heavy Snowfalls</p></a>
+</div>
+<div id='news-bottom-row'>
+<a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+<a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+<a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+<a href='#'><p>Volcanic Eruptions</p></a>
+<a href='#'><p>Hurricanes</p></a>
+<a href='#'><p>Meteor Showers</p></a>
+</div>
+</section>-->
+<!--<section id='sketches2'>
+<img src='/images/iphonev3.JPG' alt='version 3 of iphone wireframe' class='wireframes'>
+<img src='/images/ipad.jpg' alt='ipad wireframe' class='wireframes'>
+<img src='/images/browser.jpg' alt='browser wireframe' class='wireframes'>
+<h3>iPhone Wireframe Sketch</h3>
+<h3>iPad Wireframe Sketch</h3>
+<h3>Browser Wireframe Sketch</h3>
+</section>-->
+<!--End of extra HTML code-->

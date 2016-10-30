@@ -1,13 +1,7 @@
-/*Change the CSS box model*/
-html *{
-    box-sizing: border-box;
-}
-/*Used to make sure that anything outside of the regular box model gets the same sizing effects*/
-*:before, *:after{
-    box-sizing: border-box;
-}
-/*===================================================================================================================================================================
-================================================================================================================================================================================================================================================ Default CSS Code ======================================================================== ========================================================================================================================================================================================================================================================================================================================================*/
+/*
+===================================================================================================================================================================
+============================================================================================================================================================================================================================================ Default CSS Code ======================================================================== ======================================================================================================================================================================================================================================================================================================================================*/
+/*
 html {
     background-color: #555;
     color: lightgray;
@@ -199,12 +193,13 @@ section#hourly {
     display: inline;
     list-style-type: none;
 }
-
-/*===================================================================================================================================================================
-======================================================================================================================================================================================================================================== Media Query for Tablet Device Screens =========================================================== ========================================================================================================================================================================================================================================================================================================================================*/
+*/
+/*
+===================================================================================================================================================================
+==================================================================================================================================================================================================================================== Media Query for Tablet Device Screens =========================================================== ======================================================================================================================================================================================================================================================================================================================================*/
+/*
 @media screen and (min-width: 600px)
 {
-    /*Enter CSS changes for tablet device screens here*/
     section#hourly {
         display: inline-block;
     }
@@ -297,12 +292,14 @@ section#hourly {
         width: 100%;
     }
 }
-
-/*===================================================================================================================================================================
-======================================================================================================================================================================================================================================= Media Query for Desktop & Laptop Screens ========================================================= ========================================================================================================================================================================================================================================================================================================================================*/
+*/
+/*
+===================================================================================================================================================================
+==================================================================================================================================================================================================================================== Media Query for Desktop & Laptop Screens ======================================================== ======================================================================================================================================================================================================================================================================================================================================
+*/
+/*
 @media screen and (min-width: 1025px)
 {
-    /*Enter CSS changes for laptop and desktop screens here*/
     section#hourly {
         display: inline-block;
     }
@@ -378,5 +375,325 @@ section#hourly {
         float: right;
         width: 30%;
         height: 455px;
+    }
+}
+*/
+/*
+======================================================================================================================================================================================================================================================================================================================================
+*/
+/*Enter the base CSS Code here for the Franklin and Greenville Weather Pages (with flexbox in mind)*/
+*{
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: border-box;
+}
+html {
+    color: lightgray;
+    background-color: #555;
+    font-family: sans-serif;
+}
+#content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: serif;
+}
+/*Page Banner*/
+#logo {
+    width: 7%;
+    margin: 2px 0 -5px 2px;
+}
+header {
+    background-color: black;
+    width: 100%;
+}
+header h2 {
+    display: inline-flex;
+    margin: 0 0;
+    font-size: 8.4vw;
+}
+/*end page banner*/
+
+/*Top Navigation*/
+#top-nav ul {
+    margin: 0 3px;
+    padding: 0;
+    text-align: center;
+}
+#top-nav ul li {
+    font-size: 4.3vw;
+    list-style-type: none;
+    display: inline-flex;
+}
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+a:hover {
+    color: black;
+}
+a p:hover {
+    color: black;
+}
+/*end top navigation*/
+
+/*Alerts and Search Bar*/
+#alerts {
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 2px 2px;
+    border-top: solid lightgray 1px;
+}
+#searchBar {
+    width: 48%;
+    margin-bottom: 1px;
+}
+/*end alerts and search bar*/
+
+/*Current Weather Data*/
+#row1 {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+#weatherData {
+    width: 100%;
+}
+.weatherIcon {
+    width: 30%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+}
+.idaho {
+    background-image: url(/images/sky.jpg);
+    background-size: cover;
+}
+.south-carolina {
+    background-image: url(/images/clouds.jpg);
+    background-size: cover;
+}
+#weatherData h2 {
+    color: white;
+    margin: 5px 0px 0px 3px;
+}
+#weatherData ul li strong {
+    color: white;
+}
+#weatherData ul {
+    padding-left: 3px;
+    color: white;
+    list-style-type: none;
+    margin: 5px 0px;
+    width: 60%;
+}
+#logo2 {
+    display: none;
+}
+.nonMobile {
+    display: none;
+}
+#ad {
+    display: none;
+}
+/*end current weather data*/
+
+/*Hourly Weather Data*/
+#hourly {
+    overflow-x: scroll;
+    height: 23.75vh;
+}
+#hourlytemps {
+    border: 3px solid lightgray;
+}
+td {
+    text-align: center;
+    border: 0.5px solid lightgray;
+    height: 10vh;
+}
+/*end hourly weather data*/
+
+/*News*/
+#newsHeading {
+    margin: 10px 0px 5px 0px;
+}
+#row2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#news {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    width: 100%;
+}
+.newsImages {
+    flex-flow: column wrap;
+}
+#news img {
+    width: 100%;
+}
+#relatedNews {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid white;
+}
+#relatedNews img {
+    width: 100%;
+}
+/*end news*/
+
+/*Sketches*/
+.sketchImages {
+    display: inline-flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.wireframes {
+    width: 100%;
+    height: 100%;
+}
+/*end sketches*/
+
+/*Footer*/
+footer ul {
+    padding-left: 0px;
+}
+footer ul li {
+    display: inline-flex;
+}
+#bottom-nav {
+    text-align: center;
+}
+/*end footer*/
+
+/*
+======================================================================================================================================================================================================================================================================================================================================
+*/
+
+/*Media query for medium-sized screens*/
+@media screen and (min-width: 750px) {
+    #content {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    #top-nav ul li {
+        font-size: 1rem;
+    }
+    #row1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #weatherData ul {
+        list-style-type: none;
+    }
+    #weatherData {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        padding: 2.5%;
+        background-repeat: round;
+        flex-basis: 600px;
+        height: 400px;
+    }
+    #sunIcon {
+        position: relative;
+        bottom: 200px;
+        left: 40px;
+    }
+    #thunderIcon {
+        position: relative;
+        bottom: 200px;
+        left: 40px;
+    }
+    #ad {
+        display: inherit;
+        width: 200px;
+        height: 300px;
+    }
+    header {
+        text-align: center;
+    }
+    header h2 {
+        font-size: 2.9rem;
+    }
+    #logo {
+        display: none;
+    }
+    #logo2 {
+        display: inherit;
+        align-self: flex-start;
+        width: 15%;
+        height: 15%;
+    }
+    #alerts {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        position: relative;
+        right: 3px;
+    }
+    #news {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #news img {
+        width: 250px;
+    }
+    .newsImages {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0 1%;
+    }
+    #relatedNews {
+        width: 20%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #searchBar {
+        max-width: 20%;
+    }
+    #row2 {
+        flex-flow: row nowrap;
+    }
+    #relatedNews img {
+        max-width: 100%;
+    }
+    .wireframes {
+        width: 350px;
+    }
+    .sketchImages {
+        width: 33%;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1022px) {
+    #weatherData ul li strong {
+        font-size: 30px;
+    }
+    .idaho .nonMobile {
+        display: inherit;
+        background-color: rgba(5,5,5,0.1);
+        max-width: 175px;
+    }
+    .south-carolina .nonMobile {
+        display: inherit;
+        background-color: rgba(160,160,160,0.2);
+        max-width: 175px;
+    }
+    #ad {
+        width: 300px;
+        height: 400px;
     }
 }
