@@ -441,6 +441,8 @@ a p:hover {
 
 /*Alerts and Search Bar*/
 #alerts {
+    display: flex;
+    justify-content: space-between;
     font-size: 0.8rem;
     width: 100%;
     margin: 2px 2px;
@@ -462,9 +464,7 @@ a p:hover {
     width: 100%;
 }
 .weatherIcon {
-    width: 30%;
-    margin-left: 50%;
-    margin-bottom: 10%;
+    width: 100px;
 }
 .idaho {
     background-image: url(/images/sky.jpg);
@@ -576,7 +576,7 @@ footer ul li {
 */
 
 /*Media query for medium-sized screens*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 670px) {
     #content {
         max-width: 75%;
         margin: 0 auto;
@@ -596,31 +596,26 @@ footer ul li {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        padding: 2.5%;
+        padding: 2px;
         background-repeat: round;
-        flex-basis: 600px;
-        height: 400px;
+        max-height: 375px;
     }
-    #sunIcon {
-        position: relative;
-        bottom: 200px;
-        left: 40px;
+    .idaho .nonMobile {
+        display: inherit;
+        background-color: rgba(5,5,5,0.1);
+        max-width: 100px;
     }
-    #thunderIcon {
-        position: relative;
-        bottom: 200px;
-        left: 40px;
+    .south-carolina .nonMobile {
+        display: inherit;
+        background-color: rgba(160,160,160,0.2);
+        max-width: 100px;
     }
     #ad {
         display: inherit;
-        width: 200px;
-        height: 300px;
+        width: 150px;
     }
     header {
         text-align: center;
-    }
-    header h2 {
-        font-size: 2.9rem;
     }
     #logo {
         display: none;
@@ -670,10 +665,10 @@ footer ul li {
         max-width: 100%;
     }
     .wireframes {
-        width: 350px;
+        width: 33%px;
     }
     .sketchImages {
-        width: 33%;
+        width: 30%;
         align-items: center;
     }
 }
@@ -681,6 +676,12 @@ footer ul li {
 @media screen and (min-width: 1022px) {
     #weatherData ul li strong {
         font-size: 30px;
+    }
+    #weatherData ul li h3 {
+        font-size: 25pt;
+    }
+    #weatherData {
+        height: 375px;
     }
     .idaho .nonMobile {
         display: inherit;
@@ -693,7 +694,7 @@ footer ul li {
         max-width: 175px;
     }
     #ad {
-        width: 300px;
-        height: 400px;
+        width: 250px;
+        height: 350px;
     }
 }
