@@ -7,179 +7,155 @@
     <title>Franklin, ID | Weather Report</title>
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
-<div id='content'>
-    <header>
-        <img src='/images/logo.png' alt='site logo' id='logo'>
-        <h2 class='banner'>WeatherNow.com</h2>
-    </header>
-    <nav id='top-nav'>
-        <ul>
-            <li><a href='franklin.html'>Franklin, ID </a></li>
-            <li class='bar'>|</li>
-            <li><a href='greenville.html'>Greenville, SC</a></li>
-            <li class='bar'>|</li>
-            <li><a href='springfield.html'>Springfield, IL</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p id='alerts'>
-            <a href=''>Local Weather Alerts</a>
-            <input type='text' id='searchBar' placeholder='Search...'>
-        </p>
-        <div id='row1'>
-            <section class='idaho' id='weatherData'>
-                <ul>
-                    <li><h3>Franklin, ID</h3></li>
-                    <li><strong>Hi: 90&deg;</strong></li>
-                    <li><strong>Lo: 66&deg;</strong></li>
-                    <li class='nonMobile'>Precip: 0</li>
-                    <li class='nonMobile'>Wind: 1 - 5</li>
-                    <li class='nonMobile'>Direction: Southwest</li>
-                    <li class='nonMobile'>Summary: Sunny</li>
-                </ul>
-                <img src='/images/sun.png' alt='sun icon' class='weatherIcon' id='sunIcon'>
-            </section>
-            <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
-        </div>
-        <h2>Hourly Temperatures</h2>
-        <div id='hourly'>
-            <table id='hourlytemps'>
-                <thead>
-                    <tr>
-                        <td>12A.M.</td>
-                        <td>1A.M.</td>
-                        <td>2A.M.</td>
-                        <td>3A.M.</td>
-                        <td>4A.M.</td>
-                        <td>5A.M.</td>
-                        <td>6A.M.</td>
-                        <td>7A.M.</td>
-                        <td>8A.M.</td>
-                        <td>9A.M.</td>
-                        <td>10A.M.</td>
-                        <td>11A.M.</td>
-                        <td>12P.M.</td>
-                        <td>1P.M.</td>
-                        <td>2P.M.</td>
-                        <td>3P.M.</td>
-                        <td>4P.M.</td>
-                        <td>5P.M.</td>
-                        <td>6P.M.</td>
-                        <td>7P.M.</td>
-                        <td>8P.M.</td>
-                        <td>9P.M.</td>
-                        <td>10P.M.</td>
-                        <td>11P.M.</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>67&deg;</td>
-                        <td>67&deg;</td>
-                        <td>69&deg;</td>
-                        <td>69&deg;</td>
-                        <td>69&deg;</td>
-                        <td>70&deg;</td>
-                        <td>69&deg;</td>
-                        <td>72&deg;</td>
-                        <td>74&deg;</td>
-                        <td>77&deg;</td>
-                        <td>79&deg;</td>
-                        <td>81&deg;</td>
-                        <td>84&deg;</td>
-                        <td>86&deg;</td>
-                        <td>88&deg;</td>
-                        <td>90&deg;</td>
-                        <td>90&deg;</td>
-                        <td>85&deg;</td>
-                        <td>83&deg;</td>
-                        <td>79&deg;</td>
-                        <td>74&deg;</td>
-                        <td>70&deg;</td>
-                        <td>68&deg;</td>
-                        <td>66&deg;</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <h2 id='newsHeading'>News</h2>
-        <div id='row2'>
-            <div id='news'>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
-                    <a href=''>
-                        <p>Terrible Storms!</p>
-                    </a>
+
+<body>
+    <div id='content'>
+        <header id='page-header'>
+
+        </header>
+        <nav id='top-nav'>
+            <noscript>JavaScript is not enabled. For navigation please visit the <a href='/weather/sitemap.html'>Site Map</a>.</noscript>
+        </nav>
+        <main>
+            <p id='alerts'>
+                <a href=''>Local Weather Alerts</a>
+                <input type='text' id='searchBar' placeholder='Search...'>
+            </p>
+            <div id='row1'>
+                <section class='idaho' id='weatherData'>
+                    <ul>
+                        <li>
+                            <h3>Franklin, ID</h3></li>
+                        <li><strong>Hi: 90&deg;</strong></li>
+                        <li><strong>Lo: 66&deg;</strong></li>
+                        <li class='nonMobile'>Precip: 0</li>
+                        <li class='nonMobile'>Wind: 1 - 5</li>
+                        <li class='nonMobile'>Direction: Southwest</li>
+                        <li class='nonMobile'>Summary: Sunny</li>
+                    </ul>
+                    <img src='/images/sun.png' alt='sun icon' class='weatherIcon' id='sunIcon'>
+                </section>
+                <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
+            </div>
+            <h2>Hourly Temperatures</h2>
+            <div id='hourly'>
+                <table id='hourlytemps'>
+                    <thead>
+                        <tr>
+                            <td>12am</td>
+                            <td>1am</td>
+                            <td>2am</td>
+                            <td>3am</td>
+                            <td>4am</td>
+                            <td>5am</td>
+                            <td>6am</td>
+                            <td>7am</td>
+                            <td>8am</td>
+                            <td>9am</td>
+                            <td>10am</td>
+                            <td>11am</td>
+                            <td>12pm</td>
+                            <td>1pm</td>
+                            <td>2pm</td>
+                            <td>3pm</td>
+                            <td>4pm</td>
+                            <td>5pm</td>
+                            <td>6pm</td>
+                            <td>7pm</td>
+                            <td>8pm</td>
+                            <td>9pm</td>
+                            <td>10pm</td>
+                            <td>11pm</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>67&deg;</td>
+                            <td>67&deg;</td>
+                            <td>69&deg;</td>
+                            <td>69&deg;</td>
+                            <td>69&deg;</td>
+                            <td>70&deg;</td>
+                            <td>69&deg;</td>
+                            <td>72&deg;</td>
+                            <td>74&deg;</td>
+                            <td>77&deg;</td>
+                            <td>79&deg;</td>
+                            <td>81&deg;</td>
+                            <td>84&deg;</td>
+                            <td>86&deg;</td>
+                            <td>88&deg;</td>
+                            <td>90&deg;</td>
+                            <td>90&deg;</td>
+                            <td>85&deg;</td>
+                            <td>83&deg;</td>
+                            <td>79&deg;</td>
+                            <td>74&deg;</td>
+                            <td>70&deg;</td>
+                            <td>68&deg;</td>
+                            <td>66&deg;</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 id='newsHeading'>News</h2>
+            <div id='row2'>
+                <div id='news'>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                        <figcaption><a href=''>Terrible Storms!</a></figcaption>
+                    </figure>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                        <figcaption><a href=''>Flash Floods!</a></figcaption>
+                    </figure>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+                        <figcaption><a href=''>Heavy Snowfalls</a></figcaption>
+                    </figure>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+                        <figcaption><a href=''>Volcanic Eruptions</a></figcaption>
+                    </figure>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+                        <figcaption><a href=''>Hurricanes</a></figcaption>
+                    </figure>
+                    <figure class='newsImages'>
+                        <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+                        <figcaption><a href=''>Meteor Showers</a></figcaption>
+                    </figure>
+                </div>
+                <aside id='relatedNews'>
+                    <h2>More News Stories</h2>
+                    <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
+                    <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+                    <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
+                    <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+                </aside>
+            </div>
+            <div id='row3'>
+                <figure class='sketchImages'>
+                    <p>iPhone Wireframe Sketch:</p>
+                    <img src='/images/iphonev4.jpg' alt='version 4 of iphone wireframe' class='wireframes'>
                 </figure>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
-                    <a href=''>
-                        <p>Flash Floods!</p>
-                    </a>
+                <figure class='sketchImages'>
+                    <p>iPad Wireframe Sketch:</p>
+                    <img src='/images/ipadv2.jpg' alt='version 2 of ipad wireframe' class='wireframes'>
                 </figure>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
-                    <a href=''>
-                        <p>Heavy Snowfalls</p>
-                    </a>
-                </figure>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
-                    <a href=''>
-                        <p>Volcanic Eruptions</p>
-                    </a>
-                </figure>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
-                    <a href=''>
-                        <p>Hurricanes</p>
-                    </a>
-                </figure>
-                <figure class='newsImages'>
-                    <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
-                    <a href=''>
-                        <p>Meteor Showers</p>
-                    </a>
+                <figure class='sketchImages'>
+                    <p>Browser Wireframe Sketch:</p>
+                    <img src='/images/browserv2.jpg' alt='version 2 of browser wireframe' class='wireframes'>
                 </figure>
             </div>
-            <aside id='relatedNews'>
-                <h2>More News Stories</h2>
-                <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
-                <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
-                <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
-                <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
-            </aside>
-        </div>
-        <div id='row3'>
-            <figure class='sketchImages'>
-                <p>iPhone Wireframe Sketch:</p>
-                <img src='/images/iphonev4.jpg' alt='version 4 of iphone wireframe' class='wireframes'>
-            </figure>
-            <figure class='sketchImages'>
-                <p>iPad Wireframe Sketch:</p>
-                <img src='/images/ipadv2.jpg' alt='version 2 of ipad wireframe' class='wireframes'>
-            </figure>
-            <figure class='sketchImages'>
-                <p>Browser Wireframe Sketch:</p>
-                <img src='/images/browserv2.jpg' alt='version 2 of browser wireframe' class='wireframes'>
-            </figure>
-        </div>
-    </main>
-    <footer>
-        <nav id='bottom-nav'>
-            <ul>
-                <li><a href=''>About Us</a></li>
-                <li class='bar'>|</li>
-                <li><a href=''>Terms of Use</a></li>
-                <li class='bar'>|</li>
-                <li><a href=''>Careers</a></li>
-                <li class='bar'>|</li>
-                <li><a href='franklin.html'>WeatherNow.com</a></li>
-            </ul>
-            <p>Made by Joseph Canto &copy; 2016</p>
-        </nav>
-    </footer>
-</div>
+        </main>
+        <footer id="page-footer">
+
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src='/scripts/modules.js'></script>
+</body>
 
 </html>
 

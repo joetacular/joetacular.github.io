@@ -7,7 +7,7 @@
 }
 html {
     color: lightgray;
-    background-color: #555;
+    background: #555;
     font-family: sans-serif;
 }
 #content {
@@ -35,9 +35,11 @@ header h2 {
 
 /*Top Navigation*/
 #top-nav ul {
-    margin: 0 3px;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0px;
     text-align: center;
+    background: linear-gradient(to bottom, #000, #333);
+    width: 100%;
 }
 #top-nav ul li {
     font-size: 9pt;
@@ -49,10 +51,10 @@ a {
     color: lightgray;
 }
 a:hover {
-    color: black;
+    color: white;
 }
 a p:hover {
-    color: black;
+    color: white;
 }
 /*end top navigation*/
 
@@ -126,6 +128,7 @@ td {
     text-align: center;
     border: 0.5px solid lightgray;
     height: 10vh;
+    padding: 0px 10px;
 }
 /*end hourly weather data*/
 
@@ -144,6 +147,9 @@ td {
     justify-content: center;
     text-align: center;
     width: 100%;
+}
+#news figcaption {
+    margin-bottom: 20px;
 }
 #news img {
     width: 100%;
@@ -166,8 +172,9 @@ td {
     display: inline-flex;
     flex-flow: column wrap;
     width: 100%;
-    margin: auto;
+    margin: 40px auto;
     text-align: center;
+    align-items: center;
 }
 .wireframes {
     width: 100%;
@@ -200,6 +207,7 @@ footer ul li {
     }
     #top-nav ul li {
         font-size: 1rem;
+        padding: 5px 4px;
     }
     #row1 {
         display: flex;
@@ -314,6 +322,10 @@ footer ul li {
     }
     #weatherData {
         height: 375px;
+    }
+    #top-nav ul li {
+        font-size: 1.15rem;
+        padding: 8px 4px;
     }
     .idaho .nonMobile {
         background-color: rgba(5,5,5,0.1);
