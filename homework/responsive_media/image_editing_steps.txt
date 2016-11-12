@@ -1,0 +1,5 @@
+Steps for editing the images:
+1. Crop
+2. Resize
+3. Adjustments
+4. Save to images folder
