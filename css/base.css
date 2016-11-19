@@ -6,7 +6,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: serif;
     background-color: rgba(0, 0, 0, 0.5);
-    width: 500px;
     padding: 7px;
 }
 
@@ -16,8 +15,13 @@ p {
 }
 
 h1 {
-    font-size: 3em;
-    clear: left;
+    font-size: 2.75em;
+    display: inline-block;
+    margin: 0;
+}
+
+nav h2 {
+    max-width: 77%;
 }
 
 ul {
@@ -27,7 +31,7 @@ ul {
     list-style-type: none;
     box-shadow: 2px 2px 30px lime;
     clear: left;
-    width: 33%
+    width: 75%
 }
 
 a {
@@ -44,24 +48,39 @@ a:visited {
     color: darkgray;
 }
 
-footer {
-    margin-top: 100px;
-    text-align: center;
-}
-
 #sitelogo {
-    float: left;
-    width: 120px;
+    margin-bottom: -23px;
+    width: 50px;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 #content {
-    width: 960px;
-    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
 }
 
 html {
     background-image:url(/images/mountain.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
+}
+
+header {
+    max-width: 100%;
+}
+
+nav {
+    max-width: 40%;
+}
+
+main {
+    max-width: 60%;
+}
+
+footer {
+    align-self: flex-end;
+    width: 100%;
+    text-align: center;
 }
