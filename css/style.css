@@ -86,6 +86,9 @@ a p:hover {
 .weatherIcon {
     width: 100px;
 }
+.current {
+    background: linear-gradient(to bottom left, lightskyblue, #1155aa);
+}
 .idaho {
     background-image: url(/images/sky.jpg);
     background-size: cover;

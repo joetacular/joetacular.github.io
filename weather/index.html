@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather Home</title>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Joseph Canto
+* 2. Shaelyn Rich
+* 3. Samantha Caldes
+* ******************************************** -->
+    <body>
+        <div id="wrapper">
+            <header id="page-header"></header>
+            <nav id="top-nav"></nav>
+            <main id="page-main">
+                <p id='alerts'>
+                    <a href=''>Local Weather Alerts</a>
+                    <input type='text' id='searchBar' placeholder='Search...'>
+                </p>
+                <div id='row1'>
+                    <section class='current' id='weatherData'>
+                        <ul id='current_conditions'>
+                            <li><h1 id='cityDisplay'></h1></li>
+                            <li id='currentTemp'></li>
+                            <li id='summary'></li>
+                            <li id='add1'></li>
+                            <li id='add2'></li>
+                            <li id='add3'></li>
+                        </ul>
+                    </section>
+                    <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
+                </div>
+                <h2 id='newsHeading'>News</h2>
+                <div id='row2'>
+                    <div id='news'>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                            <figcaption><a href=''>Terrible Storms!</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                            <figcaption><a href=''>Flash Floods!</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+                            <figcaption><a href=''>Heavy Snowfalls</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+                            <figcaption><a href=''>Volcanic Eruptions</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+                            <figcaption><a href=''>Hurricanes</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+                            <figcaption><a href=''>Meteor Showers</a></figcaption>
+                        </figure>
+                    </div>
+                    <aside id='relatedNews'>
+                        <h2>More News Stories</h2>
+                        <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
+                        <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+                        <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
+                        <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+                    </aside>
+                </div>
+            </main>
+            <footer id="page-footer">
+                <div id="footer-content"></div>
+                <small>Last updated: November 22, 2016</small>
+            </footer>
+            <!--    <script src="../scripts/jquery-3.0.0.min.js"></script>-->
+            <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+            <script src="../scripts/modules.js"></script>
+            <script src="../scripts/remote_wu.js"></script>
+        </div>
+    </body>
+
+</html>
