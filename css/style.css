@@ -89,6 +89,9 @@ a p:hover {
 .current {
     background: linear-gradient(to bottom left, lightskyblue, #1155aa);
 }
+h1#cityDisplay {
+    margin: 0;
+}
 .idaho {
     background-image: url(/images/sky.jpg);
     background-size: cover;
@@ -209,7 +212,7 @@ footer ul li {
         margin: 0 auto;
     }
     #top-nav ul li {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 5px 4px;
     }
     #row1 {
@@ -312,6 +315,9 @@ footer ul li {
         width: 120px;
         height: 120px;
     }
+    #current_conditions li {
+        font-size: 1.25em;
+    }
 }
 
 /*Media query for devices with larger screens*/
@@ -327,7 +333,7 @@ footer ul li {
         height: 375px;
     }
     #top-nav ul li {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         padding: 8px 4px;
     }
     .idaho .nonMobile {
@@ -349,6 +355,15 @@ footer ul li {
     }
     #searchBar {
         width: 235px;
+    }
+    #current_conditions li {
+        font-size: 1.5em;
+    }
+    h1#cityDisplay {
+        font-size: 2.5em;
+    }
+    li#currentTemp {
+        font-size: 2.2em;
     }
 }
 
