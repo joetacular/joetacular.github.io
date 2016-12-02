@@ -96,8 +96,23 @@ a p:hover {
 .weatherIcon {
     width: 100px;
 }
-#iconDiv img {
+#iconFig {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0.5 0 auto;
+    justify-content: center;
+    border: 5px solid white;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#iconFig img {
+    align-self: center;
     width: 75px;
+}
+#searchSummary {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: dodgerblue;
 }
 .current {
     background: linear-gradient(to bottom left, lightskyblue, #1155aa);
@@ -236,6 +251,10 @@ footer ul li {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    #iconFig:hover {
+        width: 28%;
+        height: 80%;
     }
     #weatherData ul {
         list-style-type: none;

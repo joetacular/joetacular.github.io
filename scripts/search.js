@@ -13,15 +13,17 @@ function getData(lat, lon) {
             var summary = data.current_observation.weather;
             var highTemp = Math.round(data.forecast.simpleforecast.forecastday["0"].high.fahrenheit);
             var lowTemp = Math.round(data.forecast.simpleforecast.forecastday["0"].low.fahrenheit);
-            var icon = data.current_observation.icon_url;
-            var iconName = data.current_observation.icon;
+//            var icon = data.current_observation.icon_url;
+            var icon = data.current_observation.icon;
+            var iconURL = '"https://icons.wxug.com/i/c/k/' + icon + '.gif"';
+            console.log(iconURL);
             $('#cityDisplay').text(location);
             $('title').text(location + ' | Weather Home');
             $('#currentTemp').text(temp + "°F");
-            $('#summary').text(summary);
             $('#highTemp').text("High: " + highTemp + "°F");
             $('#lowTemp').text("Low: " + lowTemp + "°F");
-            $('#iconDiv').html("<img src=" + icon + " alt=" + iconName + ">");
+            $('#iconFig').html("<img src=" + iconURL + " alt=" + icon + ">" + "<figcaption id='searchSummary'></figcaption>");
+            $('#searchSummary').text(summary);
             $("#cover").fadeOut(250);
         }
     });
