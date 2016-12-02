@@ -1,36 +1,159 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width'>
     <title>Springfield, IL | Weather Report</title>
     <link href='/css/style.css' rel='stylesheet' type='text/css' media='screen'>
 </head>
-<header>
-    <h2>Weather Site Banner</h2>
-</header>
-<nav>
-    <ul>
-        <li><a href='franklin.html'>Franklin, ID</a></li>
-        <li><a href='greenville.html'>Greenville, SC</a></li>
-        <li><a href='springfield.html'>Springfield, IL</a></li>
-    </ul>
-</nav>
-<main>
-    <h2>Weather Report for Springfield, IL</h2>
-    <ul>
-        <li>High: 77&deg;</li>
-        <li>Low: 48&deg;</li>
-        <li>Precip: 0</li>
-        <li>Wind: 5 - 15</li>
-        <li>Direction: Northwest</li>
-        <li>Summary: Partly Cloudy</li>
-        <li>Longitude: -89.670832&deg;</li>
-        <li>Latitude: 39.763908&deg;</li>
-        <li>ZIP: 62701</li>
-    </ul>
-</main>
-<footer>
-    <h2>Footer goes here.</h2>
-</footer>
+    <body>
+        <div id='content'>
+            <header id='page-header'>
+
+            </header>
+            <nav id='top-nav'>
+                <noscript>JavaScript is not enabled. For navigation please visit the <a href='/weather/sitemap.html'>Site Map</a>.</noscript>
+            </nav>
+            <main>
+                <p id='alerts'>
+                    <a href=''>Local Weather Alerts</a>
+                    <!--                    <input type='text' id='searchBar' placeholder='Search...'>-->
+                </p>
+                <div id='row1'>
+                    <section class='illinois' id='weatherData'>
+                        <ul>
+                            <li>
+                                <h3>Springfield IL</h3></li>
+                            <li><strong>Hi: 77&deg;</strong></li>
+                            <li><strong>Lo: 48&deg;</strong></li>
+                            <li class='nonMobile'>Precip: 0</li>
+                            <li class='nonMobile'>Wind: 5 - 15</li>
+                            <li class='nonMobile'>Direction: Northwest</li>
+                            <li class='nonMobile'>Summary: Partly Cloudy</li>
+                        </ul>
+<!--                        <img src='/images/sun.png' alt='sun icon' class='weatherIcon' id='sunIcon'>-->
+                    </section>
+                    <a href='#'><img src='/images/ad.jpg' alt='shell gas station advertisement' id='ad'></a>
+                </div>
+                <h2>Hourly Temperatures</h2>
+                <div id='hourly'>
+                    <table id='hourlytemps'>
+                        <thead>
+                            <tr>
+                                <td>12am</td>
+                                <td>1am</td>
+                                <td>2am</td>
+                                <td>3am</td>
+                                <td>4am</td>
+                                <td>5am</td>
+                                <td>6am</td>
+                                <td>7am</td>
+                                <td>8am</td>
+                                <td>9am</td>
+                                <td>10am</td>
+                                <td>11am</td>
+                                <td>12pm</td>
+                                <td>1pm</td>
+                                <td>2pm</td>
+                                <td>3pm</td>
+                                <td>4pm</td>
+                                <td>5pm</td>
+                                <td>6pm</td>
+                                <td>7pm</td>
+                                <td>8pm</td>
+                                <td>9pm</td>
+                                <td>10pm</td>
+                                <td>11pm</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>48&deg;</td>
+                                <td>48&deg;</td>
+                                <td>49&deg;</td>
+                                <td>49&deg;</td>
+                                <td>50&deg;</td>
+                                <td>49&deg;</td>
+                                <td>48&deg;</td>
+                                <td>49&deg;</td>
+                                <td>52&deg;</td>
+                                <td>54&deg;</td>
+                                <td>57&deg;</td>
+                                <td>59&deg;</td>
+                                <td>62&deg;</td>
+                                <td>65&deg;</td>
+                                <td>67&deg;</td>
+                                <td>70&deg;</td>
+                                <td>75&deg;</td>
+                                <td>77&deg;</td>
+                                <td>76&deg;</td>
+                                <td>74&deg;</td>
+                                <td>69&deg;</td>
+                                <td>62&deg;</td>
+                                <td>58&deg;</td>
+                                <td>49&deg;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2 id='newsHeading'>News</h2>
+                <div id='row2'>
+                    <div id='news'>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news1.jpg' alt='news article'></a>
+                            <figcaption><a href=''>Terrible Storms!</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news2.jpg' alt='news article'></a>
+                            <figcaption><a href=''>Flash Floods!</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news3.jpg' alt='snowstorm'></a>
+                            <figcaption><a href=''>Heavy Snowfalls</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news4.jpg' alt='volcanic eruption'></a>
+                            <figcaption><a href=''>Volcanic Eruptions</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news5.jpg' alt='hurricane'></a>
+                            <figcaption><a href=''>Hurricanes</a></figcaption>
+                        </figure>
+                        <figure class='newsImages'>
+                            <a href='#'><img src='/images/news6.jpg' alt='meteor shower'></a>
+                            <figcaption><a href=''>Meteor Showers</a></figcaption>
+                        </figure>
+                    </div>
+                    <aside id='relatedNews'>
+                        <h2>More News Stories</h2>
+                        <a href='#'><img src='/images/husky.jpg' alt='siberian husky photo' id='wolf'></a>
+                        <p><a href=''>Crazy Survival Stories - See how a man and his son were rescued by a wild pack of wolves</a></p>
+                        <p><a href=''>New Weather Tech - See the newest weather-related technology in action</a></p>
+                        <p><a href=''>You'll never believe what this team of explorers found in the Arctic tundra</a></p>
+                    </aside>
+                </div>
+                <div id='row3'>
+                    <figure class='sketchImages'>
+                        <p>iPhone Wireframe Sketch:</p>
+                        <img src='/images/iphonev4.jpg' alt='version 4 of iphone wireframe' class='wireframes'>
+                    </figure>
+                    <figure class='sketchImages'>
+                        <p>iPad Wireframe Sketch:</p>
+                        <img src='/images/ipadv2.jpg' alt='version 2 of ipad wireframe' class='wireframes'>
+                    </figure>
+                    <figure class='sketchImages'>
+                        <p>Browser Wireframe Sketch:</p>
+                        <img src='/images/browserv2.jpg' alt='version 2 of browser wireframe' class='wireframes'>
+                    </figure>
+                </div>
+            </main>
+            <footer id="page-footer">
+
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src='/scripts/modules.js'></script>
+    </body>
+
 </html>

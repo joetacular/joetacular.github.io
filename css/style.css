@@ -60,18 +60,28 @@ a p:hover {
 
 /*Alerts and Search Bar*/
 #alerts {
+    font-size: 0.8rem;
+    width: 50%;
+    margin: 2px 2px;
+    /*
     display: flex;
     justify-content: space-between;
-    font-size: 0.8rem;
-    width: 100%;
-    margin: 2px 2px;
-    border-top: solid lightgray 1px;
+    border-top: solid lightgray 1px;*/
 }
+
+#srchfrm {
+    display: inline-flex;
+    text-align: right;
+    margin-top: -25px;
+    padding: 3px 0 6px 0;
+}
+/*
 #searchBar {
     width: 48%;
     max-width: 144px;
     margin-bottom: 1px;
 }
+*/
 /*end alerts and search bar*/
 
 /*Current Weather Data*/
@@ -86,6 +96,9 @@ a p:hover {
 .weatherIcon {
     width: 100px;
 }
+#iconDiv img {
+    width: 75px;
+}
 .current {
     background: linear-gradient(to bottom left, lightskyblue, #1155aa);
 }
@@ -96,7 +109,7 @@ h1#cityDisplay {
     background-image: url(/images/sky.jpg);
     background-size: cover;
 }
-.south-carolina {
+.south-carolina, .illinois {
     background-image: url(/images/clouds.jpg);
     background-size: cover;
 }
@@ -208,12 +221,16 @@ footer ul li {
 /*Media query for devices with medium-sized screens*/
 @media screen and (min-width: 670px) {
     #content {
-        max-width: 75%;
+        max-width: 100%;
         margin: 0 auto;
     }
     #top-nav ul li {
         font-size: 1.1rem;
         padding: 5px 4px;
+    }
+    #srchfrm {
+        display: inline;
+        float: right;
     }
     #row1 {
         display: flex;
@@ -244,6 +261,12 @@ footer ul li {
         display: inherit;
         background-color: rgba(160,160,160,0.2);
         width: 150px;
+        padding-left: 2px;
+    }
+    .illinois .nonMobile {
+        display: inherit;
+        background-color: rgba(160,160,160,0.2);
+        width: 175px;
         padding-left: 2px;
     }
     #ad {
@@ -294,10 +317,10 @@ footer ul li {
         align-items: center;
         align-self: flex-start;
     }
-    #searchBar {
-        width: 144px;
-        max-width: 235px;
-    }
+/*  #searchBar { */
+/*        width: 144px; */
+/*  max-width: 235px; */
+/*  } */
     #row2 {
         flex-flow: row nowrap;
         width: 100%;
@@ -322,6 +345,9 @@ footer ul li {
 
 /*Media query for devices with larger screens*/
 @media screen and (min-width: 1025px) {
+    #content {
+        max-width: 75%;
+    }
     #weatherData ul li strong {
         font-size: 30px;
     }
@@ -341,6 +367,10 @@ footer ul li {
         max-width: 175px;
     }
     .south-carolina .nonMobile {
+        background-color: rgba(160,160,160,0.2);
+        max-width: 175px;
+    }
+    .illinois .nonMobile {
         background-color: rgba(160,160,160,0.2);
         max-width: 175px;
     }
