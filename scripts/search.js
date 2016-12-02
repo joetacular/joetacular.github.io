@@ -1,13 +1,12 @@
 // Wunderground API Key: d1230b7c1330b01d
 // Get the data from the wunderground API
-var results;
+$("#iconFig").hide();
 function getData(lat, lon) {
     $.ajax({
         url: 'https://api.wunderground.com/api/d1230b7c1330b01d/geolookup/conditions/forecast/q/' + lat + ',' + lon + '.json',
         dataType: "jsonp",
         success: function(data) {
             console.log(data);
-            results = data;
             var location = data.location.city + ', ' + data.location.state;
             var temp = Math.round(data.current_observation.temp_f);
             var summary = data.current_observation.weather;
@@ -53,7 +52,7 @@ $("#searchResults").on("click", "a", function (evt) {
     console.log(i);
     $("#searchResults").hide();
     $("#resultsHeading").hide();
-    // With the text value get the needed value from the weather.json file
+    $("#iconFig").show();
     var city = $(this).text(); // Franklin, etc...
     console.log(city);
     getData(i.lat, i.lon);
