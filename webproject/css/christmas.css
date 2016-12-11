@@ -108,6 +108,9 @@ main a:hover {
     flex-flow: row wrap;
     justify-content: space-between;
 }
+#hidden {
+    opacity: 0;
+}
 #thingsToDo {
     background-color: rgba(150, 21, 21, 0.9);
     border: 5px solid white;
@@ -329,6 +332,7 @@ ol.recipes {
         background-size: cover;
         background-position: -225px;
         background-repeat: no-repeat;
+        border: 5px solid white;
     }
     #rightSide img {
         height: 400px;
