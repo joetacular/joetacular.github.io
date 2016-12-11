@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 $(function() {
-    $('#page-header').load('webproject/modules/header.html');
-    $('#page-nav').load('webproject/modules/nav.html');
-    $('#page-footer').load('webproject/modules/footer.html');
+    $('#page-header').load('/modules/header.html');
+    $('#top-nav').load('/modules/nav.html');
+    $('#page-footer').load('/modules/footer.html');
 });
-=======
-$(function() {
-    $('#page-header').load('webproject/modules/header.html');
-    $('#page-nav').load('webproject/modules/nav.html');
-    $('#page-footer').load('webproject/modules/footer.html');
-});
->>>>>>> origin/master
