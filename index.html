@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home | CountdownToChristmas.com</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href='webproject/css/christmas.css' rel='stylesheet' type='text/css' media='screen'>
+</head>
+
+<body>
+    <div id='content'>
+        <header id='page-header'>
+        </header>
+        <nav id='page-nav'>
+            <noscript>JavaScript is not enabled. For navigation please visit the <a href="sitemap.html">Site Map</a>.</noscript>
+        </nav>
+        <main>
+            <div id='main-content'>
+                <div id="countdown"></div>
+                <div id='row1'>
+                    <a href='http://www.freechristmaswallpapers.net/' title='Click to browse free Christmas wallpapers for your desktop' target='_blank'>
+                    <picture id='leftSide'>
+                        <source srcset='webproject/images/ad_300.jpg' media='(min-width: 1200px)'>
+                        <img src='webproject/images/ad_300.jpg' alt='free christmas wallpapers ad'>
+                    </picture>
+                    </a>
+                    <section id='thingsToDo'>
+                        <h2>Things to do on this website</h2>
+                        <ul>
+                            <li><a href='history.html'>Learn about the history of Christmas</a></li>
+                            <li><a href='biographies.html'>Read about Santa, Rudolph, and others</a></li>
+                            <li><a href='games.html'>Play fun Christmas games</a></li>
+                            <li><a href='ideas.html'>Find ideas to have fun with your family on Christmas</a></li>
+                            <li><a href='ideas.html'>Find recipes for Christmas cookies and other tasty treats</a></li>
+                        </ul>
+                    </section>
+                    <picture id='rightSide'>
+                        <source srcset='webproject/images/snowman_300.jpg' media='(min-width: 768px)'>
+                        <source srcset='webproject/images/snowman_200.jpg' media='(min-width: 500px)'>
+                        <img src='webproject/images/snowman_300.jpg' alt='image of a fake snowman'>
+                    </picture>
+                </div>
+                <section id='row2'>
+                    <h2><u>Blog Posts</u></h2>
+                    <h3>Our website has a new logo!</h3>
+                    <picture class='pictures' id='sitelogo'>
+                        <source srcset='webproject/images/logo_200.png' media='(min-width: 768px)'>
+                        <source srcset='webproject/images/logo_150.png' media='(min-width: 500px)'>
+                        <source srcset='webproject/images/logo_100.png' media='(min-width: 260px)'>
+                        <img src="webproject/images/logo_200.png" alt='illustration of the logo for this website'>
+                    </picture>
+                    <p>Just in time for Christmas.</p>
+                    <p><small>(Posted December 10th, 2016)</small></p><br>
+                    <h3>I can't believe it!</h3>
+                    <p>Someone from my church knocked on my door, left a basket full of food to make Christmas dinner with, ran away, got in a car, and quickly drove off! I'm not sure who it was! They left some potatoes, stuffing mix, gravy mix, a can of tomato sauce, 2 cans of peas, a big frozen ham, and a bag of sugar cookies!</p>
+                    <p><small>(Posted December 9th, 2016)</small></p><br>
+                    <h3>Video of my Christmas decorations</h3>
+                    <video class="content-video" controls preload="metadata" src="webproject/videos/decorations.MP4"></video>
+                    <p><small>(Posted December 9th, 2016)</small></p><br>
+                    <h3>Fun with snow</h3>
+                    <picture class='pictures'>
+                        <source srcset='webproject/images/cars_800.jpg' media='(min-width: 768px)'>
+                        <source srcset='webproject/images/cars_400.jpg' media='(min-width: 500px)'>
+                        <source srcset='webproject/images/cars_200.jpg' media='(min-width: 260px)'>
+                        <img src="webproject/images/cars_800.jpg" alt='picture of cars with faces drawn on them in the snow'>
+                    </picture>
+                    <p>Some people here in Idaho draw faces on the cars when it snows. It's pretty funny to see. People have also made some snowmen in random public places, which I find funny. I love snow!</p>
+                    <p><small>(Posted December 9th, 2016)</small></p><br>
+                    <h3>Time for decorations!</h3>
+                    <picture class='pictures'>
+                        <source srcset='webproject/images/decorating_800.jpg' media='(min-width: 768px)'>
+                        <source srcset='webproject/images/decorating_400.jpg' media='(min-width: 500px)'>
+                        <source srcset='webproject/images/decorating_200.jpg' media='(min-width: 260px)'>
+                        <img src="webproject/images/decorating_800.jpg" alt='picture of indoor christmas lights'>
+                    </picture>
+                    <p>I put Christmas lights up in my living room today. It looks great when it's dark and I turn the ceiling light off! I hope you are all having fun decorating!</p>
+                    <p><small>(Posted December 8th, 2016)</small></p><br>
+                    <h3>Christmas is coming!!</h3>
+                    <p>Someone put a candy cane and a nice note on my car this morning under my windshield wiper! Also, I'm loving the Christmas decorations and the snow everywhere. Isn't the holiday season great??</p>
+                    <p><small>(Posted December 7th, 2016)</small></p><br>
+                    <h3>It's getting pretty cold!</h3>
+                    <p>I hope Santa will be warm enough on Christmas Eve!</p>
+                    <p><small>(Posted December 5th, 2016)</small></p><br>
+                    <h3>Snow, wonderful snow!</h3>
+                    <p>It just started to snow here in Idaho not too long ago! Christmas is coming!</p>
+                    <p><small>(Posted December 3rd, 2016)</small></p>
+                </section>
+            </div>
+        </main>
+        <footer id='page-footer'>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="webproject/scripts/modules.js"></script>
+    </div>
+    <script type='text/javascript'>
+        var currentDate = new Date();
+        var currentYear = currentDate.getFullYear();
+        var christmas = new Date("December 25, " + currentYear + " 00:00:00");
+        var daysLeft = Math.ceil((christmas-currentDate)/ 86400000); //Number of milliseconds in one day (1000*60*60*24)
+        if(daysLeft != 0){
+            document.getElementById("countdown").innerHTML = "<small>Days left until Christmas</small><br>" + daysLeft;
+        }
+        else if(daysLeft == 0){
+            document.getElementById("countdown").innerHTML = "Merry Christmas!!!!";
+        }
+    </script>
+</body>
+
+</html>

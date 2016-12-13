@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Christmas Games | CountdownToChristmas.com</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href='webproject/css/christmas.css' rel='stylesheet' type='text/css' media='screen'>
+</head>
+
+<body>
+    <div id='content'>
+        <header id='page-header'>
+        </header>
+        <nav id='page-nav'>
+            <noscript>JavaScript is not enabled. For navigation please visit the <a href="sitemap.html">Site Map</a>.</noscript>
+        </nav>
+        <main>
+            <h1 class='page-heading'>Christmas Games</h1>
+            <section class='redBox games'>
+                <picture class='pictures center'>
+                    <source srcset='webproject/images/northpole_580.jpg' media='(min-width: 650px)'>
+                    <source srcset='webproject/images/northpole_400.jpg' media='(min-width: 480px)'>
+                    <source srcset='webproject/images/northpole_290.jpg' media='(min-width: 260px)'>
+                    <img src='webproject/images/northpole_580.jpg' alt='illustration of the north pole'>
+                </picture>
+                <p id='invisible-text'>---------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+                <h2>Guessing Game</h2>
+                <!-- First Question -->
+                <p>Which one of Santa's reindeer has a glowing red nose?</p>
+                <input type='text' id='guessOne' placeholder='Enter name here...'>
+                <button type='button' onclick="questionOne()">Guess</button>
+                <div id='answerOne'></div>
+                <br>
+                <!-- Second Question -->
+                <p>Who are Santa's little helpers?</p>
+                <input type='text' id='guessTwo' placeholder='Enter name here...'>
+                <button type='button' onclick="questionTwo()">Guess</button>
+                <div id='answerTwo'></div>
+                <br>
+                <!-- Third Question -->
+                <p>What is Santa's favorite holiday?</p>
+                <input type='text' id='guessThree' placeholder='Enter holiday here...'>
+                <button type='button' onclick="questionThree()">Guess</button>
+                <div id='answerThree'></div>
+                <br>
+                <!-- Fourth Question -->
+                <p>Where does Santa live?</p>
+                <input type='text' id='guessFour' placeholder='Enter location here...'>
+                <button type='button' onclick="questionFour()">Guess</button>
+                <div id='answerFour'></div>
+                <br>
+                <!-- Fifth Question -->
+                <p>What day is Christmas on?</p>
+                <input type='text' id='guessFive' placeholder='Enter month/date here...'>
+                <button type='button' onclick="questionFive()">Guess</button>
+                <div id='answerFive'></div>
+                <br>
+                <!-- Sixth Question -->
+                <p>What color is Santa's suit?</p>
+                <input type='text' id='guessSix' placeholder='Enter color here...'>
+                <button type='button' onclick="questionSix()">Guess</button>
+                <div id='answerSix'></div>
+                <br>
+                <!-- Seventh Question -->
+                <p>How many reindeer does Santa have?</p>
+                <input type='text' id='guessSeven' placeholder='Enter number here...'>
+                <button type='button' onclick="questionSeven()">Guess</button>
+                <div id='answerSeven'></div>
+                <br>
+                <!-- Eighth Question -->
+                <p>Have you been naughty or nice this year?</p>
+                <input type='text' id='guessEight' placeholder='Enter naughty/nice here...'>
+                <button type='button' onclick="questionEight()">Guess</button>
+                <div id='answerEight'></div>
+                <br>
+                <!-- Ninth Question -->
+                <p>Is Santa real?</p>
+                <input type='text' id='guessNine' placeholder='Enter yes or no here...'>
+                <button type='button' onclick="questionNine()">Guess</button>
+                <div id='answerNine'></div>
+                <br>
+
+                <!-- Tenth Question -->
+                <p>Will you be good next year?</p>
+                <input type='text' id='guessTen' placeholder='Enter yes or no here...'>
+                <button type='button' onclick="questionTen()">Guess</button>
+                <div id='answerTen'></div>
+                <br>
+            </section>
+            <section class='redBox games'>
+                <h2>Name That Christmas Song</h2>
+                <!-- First Song -->
+                <p><em>"He's makin' a list, checkin' it twice..."</em></p>
+                <input type='text' id='nameOne' placeholder='Enter song name here...'>
+                <button type='button' onclick="songOne()">Guess</button>
+                <div id='songNameOne'></div>
+                <br>
+                <!-- Second Song -->
+                <p><em>"In the meadow we can build a snowman..."</em></p>
+                <input type='text' id='nameTwo' placeholder='Enter song name here...'>
+                <button type='button' onclick="songTwo()">Guess</button>
+                <div id='songNameTwo'></div>
+                <br>
+                <!-- Third Song -->
+                <p><em>"Oh what fun it is to ride in a one-horse open sleigh!"</em></p>
+                <input type='text' id='nameThree' placeholder='Enter song name here...'>
+                <button type='button' onclick="songThree()">Guess</button>
+                <div id='songNameThree'></div>
+                <br>
+                <!-- Fourth Song -->
+                <p><em>"Hear them ring! <small>(Hear them ring!)</small> Soon it will be Christmas Day!"</em></p>
+                <input type='text' id='nameFour' placeholder='Enter song name here...'>
+                <button type='button' onclick="songFour()">Guess</button>
+                <div id='songNameFour'></div>
+                <br>
+                <!-- Fifth Song -->
+                <p><em>"He was made of snow but the children all know how he came to life one day."</em></p>
+                <input type='text' id='nameFive' placeholder='Enter song name here...'>
+                <button type='button' onclick="songFive()">Guess</button>
+                <div id='songNameFive'></div>
+                <br>
+            </section>
+        </main>
+        <footer id='page-footer'>
+        </footer>
+        <script type='text/javascript'>
+            function questionOne() {
+                var guess = document.getElementById('guessOne').value.toLowerCase();
+                var answer = "rudolph";
+                var output = "";
+                if (guess == answer) {
+                    output = "That's right!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerOne').innerHTML = output;
+            }
+
+            function questionTwo() {
+                var guess = document.getElementById('guessTwo').value.toLowerCase();
+                var answer = "elves";
+                var output = "";
+                if (guess == answer) {
+                    output = "Exactly!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerTwo').innerHTML = output;
+            }
+
+            function questionThree() {
+                var guess = document.getElementById('guessThree').value.toLowerCase();
+                var answer = "christmas";
+                var output = "";
+                if (guess == answer) {
+                    output = "Was that too obvious?";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerThree').innerHTML = output;
+            }
+
+            function questionFour() {
+                var guess = document.getElementById('guessFour').value.toLowerCase();
+                var answer = "the north pole";
+                var output = "";
+                if (guess == answer || guess == "north pole") {
+                    output = "Good guess!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerFour').innerHTML = output;
+            }
+
+            function questionFive() {
+                var guess = document.getElementById('guessFive').value.toLowerCase();
+                var answer = "december 25th";
+                var output = "";
+                if (guess == answer || guess == "december 25") {
+                    output = "Well done!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerFive').innerHTML = output;
+            }
+
+            function questionSix() {
+                var guess = document.getElementById('guessSix').value.toLowerCase();
+                var answer = "red";
+                var output = "";
+                if (guess == answer) {
+                    output = "You got it!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerSix').innerHTML = output;
+            }
+
+            function questionSeven() {
+                var guess = document.getElementById('guessSeven').value.toLowerCase();
+                var answer = "9";
+                var output = "";
+                if (guess == answer) {
+                    output = "Impressive!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('answerSeven').innerHTML = output;
+            }
+
+            function questionEight() {
+                var guess = document.getElementById('guessEight').value.toLowerCase();
+                var answer = "nice";
+                var output = "";
+                if (guess == answer) {
+                    output = "You'll get something good this year!";
+                } else {
+                    output = "I'm sure Santa has a nice lump of coal somewhere just for you.";
+                }
+                document.getElementById('answerEight').innerHTML = output;
+            }
+
+            function questionNine() {
+                var guess = document.getElementById('guessNine').value.toLowerCase();
+                var answer = "no";
+                var output = "";
+                if (guess == answer) {
+                    output = "Who told you that?";
+                } else {
+                    output = "Are you sure about that?";
+                }
+                document.getElementById('answerNine').innerHTML = output;
+            }
+
+            function questionTen() {
+                var guess = document.getElementById('guessTen').value.toLowerCase();
+                var answer = "yes";
+                var output = "";
+                if (guess == answer) {
+                    output = "Santa would be proud.";
+                    yay.play();
+                } else {
+                    output = "Santa is making his list, you know. He checks it twice.";
+                }
+                document.getElementById('answerTen').innerHTML = output;
+            }
+
+            function songOne() {
+                var guess = document.getElementById('nameOne').value.toLowerCase();
+                var answer = "santa claus is coming to town";
+                var output = "";
+                if (guess == answer) {
+                    output = "That's the one!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('songNameOne').innerHTML = output;
+            }
+
+            function songTwo() {
+                var guess = document.getElementById('nameTwo').value.toLowerCase();
+                var answer = "winter wonderland";
+                var output = "";
+                if (guess == answer) {
+                    output = "Good guess!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('songNameTwo').innerHTML = output;
+            }
+
+            function songThree() {
+                var guess = document.getElementById('nameThree').value.toLowerCase();
+                var answer = "jingle bells";
+                var output = "";
+                if (guess == answer) {
+                    output = "Nice!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('songNameThree').innerHTML = output;
+            }
+
+            function songFour() {
+                var guess = document.getElementById('nameFour').value.toLowerCase();
+                var answer = "silver bells";
+                var output = "";
+                if (guess == answer) {
+                    output = "Fantastic!";
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('songNameFour').innerHTML = output;
+            }
+
+            function songFive() {
+                var guess = document.getElementById('nameFive').value.toLowerCase();
+                var answer = "frosty the snowman";
+                var output = "";
+                if (guess == answer) {
+                    output = "Awesome!";
+                    yay.play();
+                } else {
+                    output = "Sorry, try again!";
+                }
+                document.getElementById('songNameFive').innerHTML = output;
+            }
+            var yay = new Audio('webproject/sounds/yay-kids.mp3');
+        </script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="webproject/scripts/modules.js"></script>
+    </div>
+</body>
+
+</html>
