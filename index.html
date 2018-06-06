@@ -104,7 +104,7 @@
         	var christmas = new Date("December 25, " + currentYear + " 00:00:00");
         }
         var daysLeft = Math.ceil((christmas-currentDate)/86400000); //Number of milliseconds in one day (1000*60*60*24)
-        if(daysLeft != 0){
+        if(daysLeft > 0){
             document.getElementById("demo").innerHTML = "<small>Days left until Christmas</small><br>" + daysLeft;
         }
         else if(daysLeft == 0){
